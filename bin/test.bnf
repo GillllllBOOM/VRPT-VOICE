@@ -1,0 +1,13 @@
+#BNF+IAT 1.0 GB2312;
+!grammar test;
+
+!slot <greeting>;
+!slot <warning>;
+!slot <handsup>;
+
+!start <teststart>;
+
+<teststart>:[<greeting>][<warning>][<handsup>];
+<greeting>:早上好!id(001) | 您好!id(001) | 你好!id(001);
+<warning>:不许!id(002) | 别!id(002);
+<handsup>:举起!id(003) | 举手!id(003);

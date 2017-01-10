@@ -1,0 +1,15 @@
+#BNF+IAT 1.0 GB2312;
+!grammar system;
+
+!slot <back>;
+!slot <begin>;
+!slot <nextpage>;
+!slot <previouspage>;
+
+!start <systemstart>;
+
+<systemstart>:[<back>][<begin>][<nextpage>][<previouspage>];
+<back>:后退!id(001) | 退出!id(001) | 退后!id(001);
+<begin>:开始!id(002) | 启动!id(002);
+<nextpage>:下一页!id(003) | 下页!id(003);
+<previouspage>:上一页!id(004) | 上一页!id(004);
