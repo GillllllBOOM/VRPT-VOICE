@@ -1,0 +1,6 @@
+#BNF+IAT 1.0 GB2312;
+!grammar return;
+
+!start <returnstart>;
+
+<returnstart>:·µ»Ø!id(001);

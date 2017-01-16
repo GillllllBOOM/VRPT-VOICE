@@ -1,0 +1,11 @@
+#BNF+IAT 1.0 GB2312;
+!grammar emergency;
+
+!slot <command>;
+!slot <threat>;
+
+!start <emergencystart>;
+
+<emergencystart>:返回!id(001)|(<command>|<threat>);
+<command>:放下武器!id(002);
+<threat>:去死!id(003);

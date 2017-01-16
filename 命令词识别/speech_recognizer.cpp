@@ -12,13 +12,16 @@
 #include <conio.h>
 #include <errno.h>
 #include <process.h>
-
+#include <iostream>
+#include <fstream>
+#include <string>
 
 #include "qisr.h"
 #include "msp_cmn.h"
 #include "msp_errors.h"
 #include "winrec.h"
 #include "speech_recognizer.h"
+using namespace std;
 
 
 #ifdef _WIN64
@@ -60,6 +63,8 @@ enum {
 
 int signal;
 list<speech_audio_data>speech_audio_buffer; 
+string AUDIO_FILE;
+ofstream audio_file;
 
 /* for debug. saving the recording to a file */
 #ifdef __FILE_SAVE_VERIFY__
@@ -235,24 +240,15 @@ double endend =0;
 static void asr_cb(char *data, unsigned long len, void *user_para)
 {
 	endend = GetTickCount();
-	printf("TIME:%f\n", (endend - start));
 	start = endend;
-
-	struct speech_rec *sr;
-	//printf("data address:%d\n", data);
-	//printf("roll back length:%d\n", len);
 
 	if(len == 0 || data == NULL)
 		return;
 
 	struct speech_audio_data temp = {data, len};
 	speech_audio_buffer.push_back(temp);
-	//printf("buffer.size:%d\n", speech_audio_buffer.size());
+	audio_file << data;
 
-	sr = (struct speech_rec *)user_para;
-
-	//if(sr == NULL || sr->ep_stat >= MSP_EP_AFTER_SPEECH)//MSP_EP_AFTER_SPEECH 检测到音频的后端点，后继被忽略.  >3 :超时、出现错误、音频过大
-	//	return;
 	 
 #ifdef __FILE_SAVE_VERIFY__
 	loopwrite_to_file(data, len);
@@ -326,6 +322,8 @@ int sr_init(struct speech_rec * sr, char * session_begin_params, enum sr_audsrc 
 	size_t param_size;
 	WAVEFORMATEX wavfmt = DEFAULT_FORMAT;
 
+	
+
 	if (aud_src == SR_MIC && get_input_dev_num() == 0) {
 		return -E_SR_NOACTIVEDEVICE;
 	}
@@ -351,9 +349,14 @@ int sr_init(struct speech_rec * sr, char * session_begin_params, enum sr_audsrc 
 
 	sr->notif = *notify;
 
+	audio_file.open(AUDIO_FILE, ios::app);
+	if (!audio_file) {
+		printf("打开\"%s\"文件失败！[%s]\n", AUDIO_FILE, strerror(errno));
+		return -1;
+	}
 	
 	if (aud_src == SR_MIC) {
-		errcode = create_recorder(&sr->recorder, asr_cb, (void*)sr);
+		errcode = create_recorder(&sr->recorder, asr_cb,NULL);
 		if (sr->recorder == NULL || errcode != 0) {
 			sr_dbg("create recorder failed: %d\n", errcode);
 			errcode = -E_SR_RECORDFAIL;
@@ -422,10 +425,10 @@ static unsigned int  __stdcall QISRSession_thread_proc(void* session_begin_param
 		}
 	}
 
+	int time_cnt = 0;
+
+
 	while (sr->ep_stat< MSP_EP_AFTER_SPEECH){
-		/*printf("signal:%d\n",signal);	
-		printf("buffer.size:%d\n", speech_audio_buffer.size());
-		printf("rec_pos:%d\n", sr->rec_pos);*/
 		if (is_record_stopped(sr->recorder)){
 			wait_for_rec_stop(sr->recorder, (unsigned int)-1);
 			if (sr->rec_pos == speech_audio_buffer.size()){
@@ -441,10 +444,20 @@ static unsigned int  __stdcall QISRSession_thread_proc(void* session_begin_param
 				it++;
 
 			errcode = sr_write_audio_data(sr, it->data, it->len);
+
 			if (errcode) {
 				end_sr_on_error(sr, errcode);
 				return errcode;
 			}
+
+			if ( (time_cnt >90) & (sr->ep_stat< MSP_EP_AFTER_SPEECH)){
+				sr->rec_pos = sr->rec_pos - 25;
+				end_sr_on_normal(sr);
+				break;
+			}
+			//printf("time_cnt:%d",time_cnt);
+			//printf("rec_pos:%d\n",sr->rec_pos);
+			time_cnt++;
 			sr->rec_pos++;
 		}
 		
@@ -481,7 +494,7 @@ int sr_start_listening(struct speech_rec *sr)
 	int ret;
 	int	errcode = MSP_SUCCESS;
 
-	printf("start listening/n");
+	printf("start listening\n");
 
 	if (sr->state >= SR_STATE_STARTED) {
 		sr_dbg("already STARTED.\n");
@@ -498,7 +511,6 @@ int sr_start_listening(struct speech_rec *sr)
 		open_stored_file(VERIFY_FILE_NAME);
 #endif
 	}
-
 	return 0;
 }
 
@@ -507,7 +519,7 @@ int sr_start_listening(struct speech_rec *sr)
 //停止录音。识别结果，结束此次识别
 int sr_stop_listening(struct speech_rec *sr)
 {
-	printf("STOP!STOP!\n");
+	printf("Stop listening!\n");
 	int ret = 0;
 	if (sr->state < SR_STATE_STARTED) {
 		sr_dbg("Not started or already stopped.\n");
@@ -534,6 +546,9 @@ int sr_stop_listening(struct speech_rec *sr)
 //销毁退出
 void sr_uninit(struct speech_rec * sr)
 {
+	if (audio_file)
+		audio_file.close();
+
 	if (sr->recorder) {
 		if(!is_record_stopped(sr->recorder))
 			stop_record(sr->recorder);

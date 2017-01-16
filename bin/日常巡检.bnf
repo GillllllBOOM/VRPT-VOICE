@@ -1,0 +1,11 @@
+#BNF+IAT 1.0 GB2312;
+!grammar inspect;
+
+!slot <name>;
+!slot <check>;
+
+!start <inspectstart>;
+
+<inspectstart>:返回!id(001) | ([<name>][<check>]);
+<name>:名字!id(002); 
+<check>:干什么!id(003);

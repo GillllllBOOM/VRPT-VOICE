@@ -6,9 +6,13 @@
 #include <stdio.h>
 #include <windows.h>
 #include <conio.h>
+#include <string>
 #include <errno.h>
 #include <process.h>
+#include <time.h>
 #include <list>
+#include <iostream>
+#include <fstream>
 
 #include "qisr.h"
 #include "msp_cmn.h"
@@ -42,6 +46,7 @@ const char * GRM_BUILD_PATH = "res/asr/GrmBuilld_x64";  //构建离线语法识别网络生
 const char * GRM_BUILD_PATH = "res/asr/GrmBuilld";  //构建离线语法识别网络生成数据保存路径
 #endif
 
+
 //const char * LEX_NAME = "greeting"; //更新离线识别语法的槽
 
 typedef struct _UserData {
@@ -50,6 +55,10 @@ typedef struct _UserData {
 	int     errcode; //记录语法构建或更新词典回调错误码
 	char    grammar_id[MAX_GRAMMARID_LEN]; //保存语法构建返回的语法ID
 }UserData;
+
+string LOG_FILE ;
+extern string AUDIO_FILE;
+int vad_eos = 500;
 
 extern DWORD waitres;
 extern int signal;
@@ -205,7 +214,7 @@ static unsigned int  __stdcall helper_thread_proc(void * para)
 {
 	int key;
 	int quit = 0;
-	signal = EVT_INIT;
+	
 	int errcode = 0;
 	struct speech_rec* asr = (struct speech_rec*)para;
 
@@ -215,7 +224,6 @@ static unsigned int  __stdcall helper_thread_proc(void * para)
 		case 'r':
 		case 'R':{
 			signal = EVT_START;
-			printf("start\n");
 			if (errcode = sr_start_listening(asr)) {
 				printf("start listen failed %d\n", errcode);
 				quit = 1;
@@ -264,6 +272,14 @@ static HANDLE start_helper_thread(struct speech_rec* para)
 static char *g_result = NULL;
 static unsigned int g_buffersize = BUFFER_SIZE;
 
+string replaceAll(string src, char oldChar, char newChar){
+	string head = src;
+	for (int i = 0; i < src.size(); i++){
+		if (src[i] == oldChar)
+			head[i] = newChar;
+	}
+	return head;
+}
 
 
 void on_result(const char *result, char is_last)
@@ -281,6 +297,22 @@ void on_result(const char *result, char is_last)
 			}
 		}
 		strncat(g_result, result, size);
+
+		ofstream out_file;
+		out_file.open(LOG_FILE, ios::app);
+		if (!out_file) {
+			printf("打开\"%s\"文件失败！[%s]\n", LOG_FILE, strerror(errno));
+			return;
+		}
+
+		time_t temp;
+		time(&temp);
+		string s = ctime(&temp);
+		s = replaceAll(s, '\n', ' ');
+		out_file << s << ": " << g_result <<endl<<endl;
+
+		out_file.close();
+
 		show_result(g_result, is_last);
 	}
 }
@@ -295,119 +327,15 @@ void on_speech_begin()
 	g_result = (char*)malloc(BUFFER_SIZE);
 	g_buffersize = BUFFER_SIZE;
 	memset(g_result, 0, g_buffersize);
-
-	printf("Start Listening...\n");
 }
 
 //vad_end detected
 void on_speech_end(int reason)
 {
 	if (reason == END_REASON_VAD_DETECT)//detected speech done
-		printf("\nSpeaking done! END_REASON_VAD_DETECT\n");
+		printf("\n监测到静默\n");
 	else
 		printf("\nRecognizer error %d\n", reason);
-}
-
-/*recognize audio data from computer memeory */
-static void __stdcall rec_mem(const char* audio_file, unsigned long len , char* session_begin_params)
-{
-	unsigned int	total_len = 0;
-	int				errcode = 0;
-	FILE*			f_pcm = NULL;
-	char*			p_pcm = NULL;
-	unsigned long	pcm_count = 0;
-	unsigned long	pcm_size = 0;
-	unsigned long	read_size = 0;
-	struct speech_rec asr;
-	struct speech_rec_notifier recnotifier = {
-		on_result,
-		on_speech_begin,
-		on_speech_end
-	};
-
-	if (NULL == audio_file)
-		goto iat_exit;
-
-	f_pcm = fopen(audio_file, "rb");
-	if (NULL == f_pcm)
-	{
-		printf("\nopen [%s] failed! \n", audio_file);
-		goto iat_exit;
-	}
-
-	fseek(f_pcm, 0, SEEK_END);
-	pcm_size = ftell(f_pcm); //获取音频文件大小 
-	fseek(f_pcm, 0, SEEK_SET);
-
-	p_pcm = (char *)malloc(pcm_size);
-	if (NULL == p_pcm)
-	{
-		printf("\nout of memory! \n");
-		goto iat_exit;
-	}
-
-	read_size = fread((void *)p_pcm, 1, pcm_size, f_pcm); //读取音频文件内容
-	if (read_size != pcm_size)
-	{
-		printf("\nread [%s] error!\n", audio_file);
-		goto iat_exit;
-	}
-
-	errcode = sr_init(&asr, session_begin_params, SR_USER, 0, &recnotifier);
-	if (errcode) {
-		printf("speech recognizer init failed : %d\n", errcode);
-		goto iat_exit;
-	}
-
-	errcode = sr_start_listening(&asr);
-	if (errcode) {
-		printf("\nsr_start_listening failed! error code:%d\n", errcode);
-		goto iat_exit;
-	}
-
-	while (1)
-	{
-		unsigned int len = 10 * FRAME_LEN; // 每次写入200ms音频(16k，16bit)：1帧音频20ms，10帧=200ms。16k采样率的16位音频，一帧的大小为640Byte
-		int ret = 0;
-
-		if (pcm_size < 2 * len)
-			len = pcm_size;
-		if (len <= 0)
-			break;
-
-		printf(">");
-		ret = sr_write_audio_data(&asr, &p_pcm[pcm_count], len);
-
-		if (0 != ret)
-		{
-			printf("\nwrite audio data failed! error code:%d\n", ret);
-			goto iat_exit;
-		}
-
-		pcm_count += (long)len;
-		pcm_size -= (long)len;
-	}
-
-	errcode = sr_stop_listening(&asr);
-	if (errcode) {
-		printf("\nsr_stop_listening failed! error code:%d \n", errcode);
-		goto iat_exit;
-	}
-
-iat_exit:
-	if (NULL != f_pcm)
-	{
-		fclose(f_pcm);
-		f_pcm = NULL;
-	}
-	if (NULL != p_pcm)
-	{
-		free(p_pcm);
-		p_pcm = NULL;
-	}
-
-	sr_stop_listening(&asr);
-	sr_uninit(&asr);
 }
 
 
@@ -418,6 +346,7 @@ static unsigned int  __stdcall rec_mic_thread_proc(void* session_begin_params){
 
 	struct speech_rec asr;
 	char isquit = 0;
+	signal = EVT_INIT;
 
 	struct speech_rec_notifier recnotifier = {
 		on_result,
@@ -440,6 +369,7 @@ static unsigned int  __stdcall rec_mic_thread_proc(void* session_begin_params){
 	}
 
 	show_key_hints();
+	printf("vad_eos:%d\n",vad_eos);
 
 	while (1){
 		switch (signal) {
@@ -452,38 +382,13 @@ static unsigned int  __stdcall rec_mic_thread_proc(void* session_begin_params){
 		default:
 			break;
 		}
-		if (isquit)
+
+		if (isquit){
 			break;
+		}
 	}
 	
 
-	/*while (1) {
-		switch (signal) {
-		case EVT_START:{
-			if (errcode = sr_start_listening(&asr)) {
-				printf("start listen failed %d\n", errcode);
-				isquit = 1;
-			}
-			
-			break;
-		}
-		case EVT_STOP:
-			if (errcode = sr_stop_listening(&asr)) {
-				printf("stop listening failed %d\n", errcode);
-				isquit = 1;
-			}
-			break;
-		case EVT_QUIT:
-			sr_stop_listening(&asr);
-			isquit = 1;
-			break;
-		default:
-			break;
-		}
-		
-		if (isquit)
-			break;
-	}*/
 
 exit:
 	if (helper_thread != NULL) {
@@ -503,85 +408,6 @@ static HANDLE start_mic_thread(char* session_begin_params)
 
 	return hdl;
 }
-/* recognize the audio from microphone */
-static void rec_mic(char* session_begin_params)
-{
-	int errcode;
-	int i = 0;
-	HANDLE helper_thread = NULL;
-
-	struct speech_rec asr;
-	DWORD waitres;
-	char isquit = 0;
-
-	struct speech_rec_notifier recnotifier = {
-		on_result,
-		on_speech_begin,
-		on_speech_end
-	};
-
-	errcode = sr_init(&asr, session_begin_params, SR_MIC, DEFAULT_INPUT_DEVID, &recnotifier);
-	if (errcode) {
-		printf("speech recognizer init failed\n");
-		return;
-	}
-
-	for (i = 0; i < EVT_TOTAL; ++i) {
-		events[i] = CreateEvent(NULL, FALSE, FALSE, NULL);
-	}
-
-	helper_thread = start_helper_thread(&asr);
-	if (helper_thread == NULL) {
-		printf("create thread failed\n");
-		goto exit;
-	}
-
-	show_key_hints();
-
-	while (1) {
-		waitres = WaitForMultipleObjects(EVT_TOTAL, events, FALSE, INFINITE);
-		switch (waitres) {
-		case WAIT_FAILED:
-		case WAIT_TIMEOUT:
-			printf("Why it happened !?\n");
-			break;
-		case WAIT_OBJECT_0 + EVT_START:
-			if (errcode == sr_start_listening(&asr)) {
-				printf("start listen failed %d\n", errcode);
-				isquit = 1;
-			}
-			break;
-		case WAIT_OBJECT_0 + EVT_STOP:
-			if (errcode == sr_stop_listening(&asr)) {
-				printf("stop listening failed %d\n", errcode);
-				isquit = 1;
-			}
-			break;
-		case WAIT_OBJECT_0 + EVT_QUIT:
-			sr_stop_listening(&asr);
-			isquit = 1;
-			break;
-		default:
-			break;
-		}
-		if (isquit)
-			break;
-	}
-
-exit:
-	if (helper_thread != NULL) {
-		WaitForSingleObject(helper_thread, INFINITE);
-		CloseHandle(helper_thread);
-	}
-
-	for (i = 0; i < EVT_TOTAL; ++i) {
-		if (events[i])
-			CloseHandle(events[i]);
-	}
-
-	sr_uninit(&asr);
-}
-
 
 
 int run_asr(UserData *udata)
@@ -646,11 +472,12 @@ int run_asr(UserData *udata)
 	**.......
 	*/
 	_snprintf(asr_params, MAX_PARAMS_LEN - 1,
-		"engine_type = local, accent = %s,  vad_eos = 8000, \
-				asr_res_path = %s, sample_rate = %d, \
+		"engine_type = local, accent = %s,  vad_eos = %d, \
+				asr_res_path = %s, sample_rate = %d, asr_denoise = 0,\
 						grm_build_path = %s, local_grammar = %s, \
 								result_type = plain, result_encoding = GB2312, ",
 								accent,
+								vad_eos,
 								ASR_RES_PATH,
 								SAMPLE_RATE_16K,
 								GRM_BUILD_PATH,
@@ -686,7 +513,7 @@ int main(int argc, char* argv[])
 	UserData asr_data;
 	int ret = 0;
 	int place = 0;
-	char * GRM_FILE = "test.bnf"; //构建离线识别语法网络所用的语法文件
+	char * GRM_FILE = "UI主界面.bnf"; //构建离线识别语法网络所用的语法文件
 
 	ret = MSPLogin(NULL, NULL, login_config); //第一个参数为用户名，第二个参数为密码，传NULL即可，第三个参数是登录参数
 	if (MSP_SUCCESS != ret) {
@@ -694,26 +521,54 @@ int main(int argc, char* argv[])
 		goto exit;
 	}
 	while (true){
+		time_t temp;
+		string s;
+		string p;
+		time(&temp);
+		s = ctime(&temp);
+
+		p = replaceAll(s,':','_');	
+		p = replaceAll(p, '\n', '.');
+		p = replaceAll(p, ' ', '_');
+
+		LOG_FILE = "log/result_" + p + "log";
+		AUDIO_FILE = "log/result_" + p + "pcm";
+
+
 		memset(&asr_data, 0, sizeof(UserData));
 		printf("构建离线识别语法网络...\n");
-		printf("请选择场景? \n0: 场景0\n1: 场景1\n2: 场景2\n3: 场景3\n4: 场景4\n");
-
+		printf("请选择场景? \n0: UI主界面\n2: 训练、考核界面\n3: 剧本选择界面\n4: 日常巡检界面\n5: 紧急处置界面\n6: 长句测试\n");
+		//\n1: 校枪、标定、基础射击、实战射击、视频教学界面
 		scanf("%d", &place);
 
 		switch (place){
 		case 1:
-			GRM_FILE = "test.bnf";
+			GRM_FILE = "校枪、标定、基础射击、实战射击、视频教学界面.bnf";
+			vad_eos = 0;
 			break;
 		case 2:
-			GRM_FILE = "test.bnf";
+			GRM_FILE = "训练、考核界面.bnf";
+			vad_eos = 0;
 			break;
 		case 3:
-			GRM_FILE = "test.bnf";
+			GRM_FILE = "剧本选择界面.bnf";
+			vad_eos = 0;
 			break;
 		case 4:
-			GRM_FILE = "test.bnf";
+			GRM_FILE = "日常巡检.bnf";
+			vad_eos = 0;
+			break;
+		case 5:
+			GRM_FILE = "紧急处置.bnf";
+			vad_eos = 0;
+			break;
+		case 6:
+			GRM_FILE = "command.bnf";
+			vad_eos = 4000;
 			break;
 		default:
+			GRM_FILE = "UI主界面.bnf";
+			vad_eos = 0;
 			break;
 		}
 

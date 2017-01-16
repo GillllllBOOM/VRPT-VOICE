@@ -1,0 +1,6 @@
+#BNF+IAT 1.0 GB2312;
+!grammar chooseScript;
+
+!start <chooseScriptstart>;
+
+<chooseScriptstart>:返回!id(005)| 零一!id(001) | 零二!id(002) | 零三!id(003) | 零四!id(004);
