@@ -18,14 +18,22 @@
     <ClCompile Include="winrec.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="speech_recognizer.cpp">
+    <ClCompile Include="VoiceRec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VoiceBuild.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="voice.cpp">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\VoiceRec.h">
       <Filter>源文件</Filter>
-    </ClCompile>
+    </ClInclude>
+    <ClInclude Include="..\include\VoiceBuild.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

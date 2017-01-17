@@ -80,10 +80,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="VoiceBuild.cpp" />
+    <ClCompile Include="VoiceRec.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="speech_recognizer.cpp" />
-    <ClCompile Include="voice.cpp" />
     <ClCompile Include="winrec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\VoiceBuild.h" />
+    <ClInclude Include="..\include\VoiceRec.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

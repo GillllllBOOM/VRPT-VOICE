@@ -1,0 +1,60 @@
+Mon Jan 16 17:04:52 2017 : <?xml version='1.0' encoding='gb2312' standalone='yes' ?><nlp>
+  <version>1.1</version>
+  <rawtext>训练</rawtext>
+  <confidence>29</confidence>
+  <engine>local</engine>
+  <result>
+    <focus>训练</focus>
+    <confidence>27</confidence>
+    <object>
+      <训练 id="3">训练</训练>
+    </object>
+  </result>
+</nlp>
+
+
+Mon Jan 16 17:05:01 2017 : <?xml version='1.0' encoding='gb2312' standalone='yes' ?><nlp>
+  <version>1.1</version>
+  <rawtext>训练</rawtext>
+  <confidence>26</confidence>
+  <engine>local</engine>
+  <result>
+    <focus>训练</focus>
+    <confidence>20</confidence>
+    <object>
+      <训练 id="3">训练</训练>
+    </object>
+  </result>
+</nlp>
+
+
+Mon Jan 16 17:05:03 2017 : <?xml version='1.0' encoding='gb2312' standalone='yes' ?><nlp>
+  <version>1.1</version>
+  <rawtext>训练</rawtext>
+  <confidence>4</confidence>
+  <engine>local</engine>
+  <result>
+    <focus>训练</focus>
+    <confidence>3</confidence>
+    <object>
+      <训练 id="3">训练</训练>
+    </object>
+  </result>
+</nlp>
+
+
+Mon Jan 16 17:05:08 2017 : <?xml version='1.0' encoding='gb2312' standalone='yes' ?><nlp>
+  <version>1.1</version>
+  <rawtext>标定</rawtext>
+  <confidence>0</confidence>
+  <engine>local</engine>
+  <result>
+    <focus>标定</focus>
+    <confidence>0</confidence>
+    <object>
+      <标定 id="2">标定</标定>
+    </object>
+  </result>
+</nlp>
+
+
