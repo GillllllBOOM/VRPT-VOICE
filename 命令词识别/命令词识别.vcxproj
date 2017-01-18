@@ -80,6 +80,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lib_json\json_reader.cpp" />
+    <ClCompile Include="lib_json\json_value.cpp" />
+    <ClCompile Include="lib_json\json_writer.cpp" />
     <ClCompile Include="VoiceBuild.cpp" />
     <ClCompile Include="VoiceRec.cpp" />
     <ClCompile Include="main.cpp" />
@@ -88,6 +91,7 @@
   <ItemGroup>
     <ClInclude Include="..\include\VoiceBuild.h" />
     <ClInclude Include="..\include\VoiceRec.h" />
+    <ClInclude Include="lib_json\json_batchallocator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

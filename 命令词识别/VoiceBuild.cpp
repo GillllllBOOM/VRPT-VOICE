@@ -1,5 +1,9 @@
 /*
-* 语音听写(iFly Auto Transform)技术能够实时地将语音转换成对应的文字。
+@file
+@brief 讯飞录音识别构建类实现
+
+@author		Willis ZHU
+@date		2017/1/17
 */
 
 #include <stdlib.h>

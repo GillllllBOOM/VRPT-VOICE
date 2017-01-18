@@ -23,6 +23,8 @@
 #include "msp_errors.h"
 #include "winrec.h"
 #include "VoiceRec.h"
+#include "json/json.h"
+#include "json/reader.h"
 using namespace std;
 
 
@@ -126,29 +128,20 @@ static string replaceAll(string src, char oldChar, char newChar){
 }
 
 
-static void show_result(char *string, char is_over)
+static void show_result(char *result, char is_over)
 {
-	COORD orig, current;
-	CONSOLE_SCREEN_BUFFER_INFO info;
-	HANDLE w = GetStdHandle(STD_OUTPUT_HANDLE);
-	GetConsoleScreenBufferInfo(w, &info);
-	current = info.dwCursorPosition;
+	Json::Reader reader;
+	Json::Value root;
+	int i = 0;
+	if (reader.parse(result, root) && is_over)  // reader将Json字符串解析到root，root将包含Json里所有子元素  
+	{
+		string word = root["ws"][i]["cw"][i]["w"].asString();  // 访问节点
+		int id = root["ws"][i]["cw"][i]["id"].asInt();
+		int confidence = root["sc"].asInt();
 
-	if (current.X == last_pos.X && current.Y == last_pos.Y) {
-		SetConsoleCursorPosition(w, begin_pos);
+		cout << "id:" << id << endl;
+		cout << "confidence:" << confidence << endl;
 	}
-	else {
-		/* changed by other routines, use the new pos as start */
-		begin_pos = current;
-	}
-	if (is_over)
-		SetConsoleTextAttribute(w, FOREGROUND_GREEN);
-	printf("Result: [ %s ]\n", string);
-	if (is_over)
-		SetConsoleTextAttribute(w, info.wAttributes);
-
-	GetConsoleScreenBufferInfo(w, &info);
-	last_pos = info.dwCursorPosition;
 }
 
 void VoiceRec::on_result(const char *result, char is_last)

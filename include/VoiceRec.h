@@ -23,11 +23,7 @@ using namespace std;
 #define	BUFFER_SIZE	4096
 
 #define __FILE_SAVE_VERIFY__
-#define __DEBUG__
-
-static COORD begin_pos = { 0, 0 };
-static COORD last_pos = { 0, 0 };
-
+//#define __DEBUG__
 
 #define END_REASON_VAD_DETECT	0	/* detected speech done  */
 

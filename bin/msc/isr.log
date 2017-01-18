@@ -3436,3 +3436,2582 @@ Time  2017/01/18 00:27:36 194
 [2017/01/18 00:27:37 611] isr        1367 local_session_end() [in]  
 [2017/01/18 00:27:37 612] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
 [2017/01/18 00:27:37 614] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:05 871 
+============================================================
+[2017/01/18 14:35:05 871] isr        1641 isr loaded!  
+[2017/01/18 14:35:05 871] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3893fe8) 
+[2017/01/18 14:35:05 871] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:05 871] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = plain, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■  nil  
+[2017/01/18 14:35:05 872] isr        938  vad_set [in]  
+[2017/01/18 14:35:05 872] isr        973  vad_enable :  true  
+[2017/01/18 14:35:05 872] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:05 872] isr        992  vad_eos :  500  
+[2017/01/18 14:35:05 872] isr        897  enable_vad [in]  
+[2017/01/18 14:35:05 874] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:05 874] isr        932  enable_vad [out]  
+[2017/01/18 14:35:05 874] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:05 875] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:05 875] isr        1003 local_session_begin  
+[2017/01/18 14:35:06 209] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:06 209] isr        1546 6400  1  
+[2017/01/18 14:35:06 209] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:06 211] isr        845  [aud] speech start  
+[2017/01/18 14:35:06 309] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:06 309] isr        1546 6400  2  
+[2017/01/18 14:35:06 510] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:06 510] isr        1546 6400  2  
+[2017/01/18 14:35:06 711] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:06 711] isr        1546 6400  2  
+[2017/01/18 14:35:06 913] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:06 913] isr        1546 6400  2  
+[2017/01/18 14:35:06 917] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 14:35:07 115] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:07 115] isr        1546 6400  2  
+[2017/01/18 14:35:07 315] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:07 315] isr        1546 6400  2  
+[2017/01/18 14:35:07 516] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:07 516] isr        1546 6400  2  
+[2017/01/18 14:35:07 717] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:07 717] isr        1546 6400  2  
+[2017/01/18 14:35:07 920] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:07 920] isr        1546 6400  2  
+[2017/01/18 14:35:08 119] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:08 121] isr        1546 6400  2  
+[2017/01/18 14:35:08 121] isr        855  [aud] speech end  
+[2017/01/18 14:35:08 121] isr        872  aud end, MSC VAD  
+[2017/01/18 14:35:08 124] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:08 165] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(3b03ab0) 
+[2017/01/18 14:35:08 165] isr        661  process_result call:  local  udata(3b03ab0) 0  2  
+[2017/01/18 14:35:08 167] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:08 167] isr        774  local session recognized end!  
+[2017/01/18 14:35:08 322] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:08 322] isr        1546 6400  2  
+[2017/01/18 14:35:08 322] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:08 322] isr        1546 0  4  
+[2017/01/18 14:35:08 323] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:08 323] isr        1297 0  udata(3b03ab0) 5  
+[2017/01/18 14:35:08 431] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:08 431] isr        1346 session_end() [in]  
+[2017/01/18 14:35:08 431] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:08 434] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:08 434] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:08 588 
+============================================================
+[2017/01/18 14:35:08 588] isr        1641 isr loaded!  
+[2017/01/18 14:35:08 588] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(562cad8) 
+[2017/01/18 14:35:08 588] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:08 588] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = plain, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■  nil  
+[2017/01/18 14:35:08 591] isr        938  vad_set [in]  
+[2017/01/18 14:35:08 591] isr        973  vad_enable :  true  
+[2017/01/18 14:35:08 591] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:08 591] isr        992  vad_eos :  500  
+[2017/01/18 14:35:08 591] isr        897  enable_vad [in]  
+[2017/01/18 14:35:08 592] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:08 592] isr        932  enable_vad [out]  
+[2017/01/18 14:35:08 592] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:08 592] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:08 592] isr        1003 local_session_begin  
+[2017/01/18 14:35:08 594] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:08 594] isr        1546 6400  1  
+[2017/01/18 14:35:08 594] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:08 596] isr        845  [aud] speech start  
+[2017/01/18 14:35:08 694] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:08 694] isr        1546 6400  2  
+[2017/01/18 14:35:08 897] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:08 897] isr        1546 6400  2  
+[2017/01/18 14:35:09 098] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:09 098] isr        1546 6400  2  
+[2017/01/18 14:35:09 299] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:09 299] isr        1546 6400  2  
+[2017/01/18 14:35:09 500] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:09 500] isr        1546 6400  2  
+[2017/01/18 14:35:09 703] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:09 703] isr        1546 6400  2  
+[2017/01/18 14:35:09 903] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:09 904] isr        1546 6400  2  
+[2017/01/18 14:35:10 105] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:10 105] isr        1546 6400  2  
+[2017/01/18 14:35:10 306] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:10 306] isr        1546 6400  2  
+[2017/01/18 14:35:10 507] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:10 507] isr        1546 6400  2  
+[2017/01/18 14:35:10 709] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:10 709] isr        1546 6400  2  
+[2017/01/18 14:35:10 910] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:10 910] isr        1546 6400  2  
+[2017/01/18 14:35:11 111] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:11 111] isr        1546 6400  2  
+[2017/01/18 14:35:11 312] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:11 312] isr        1546 6400  2  
+[2017/01/18 14:35:11 515] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:11 515] isr        1546 6400  2  
+[2017/01/18 14:35:11 716] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:11 716] isr        1546 6400  2  
+[2017/01/18 14:35:11 726] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:11 726] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 14:35:11 726] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:11 726] isr        774  local session recognized end!  
+[2017/01/18 14:35:11 726] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 14:35:11 917] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:11 917] isr        1546 6400  2  
+[2017/01/18 14:35:11 917] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:11 917] isr        1546 0  4  
+[2017/01/18 14:35:11 917] isr        1579 aud end, USER  
+[2017/01/18 14:35:11 918] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:11 918] isr        1297 0  nil  5  
+[2017/01/18 14:35:11 921] isr        855  [aud] speech end  
+[2017/01/18 14:35:12 020] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:12 020] isr        1346 session_end() [in]  
+[2017/01/18 14:35:12 020] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:12 022] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:12 023] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:12 135 
+============================================================
+[2017/01/18 14:35:12 135] isr        1641 isr loaded!  
+[2017/01/18 14:35:12 135] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(5627e20) 
+[2017/01/18 14:35:12 137] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:12 137] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = plain, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■  nil  
+[2017/01/18 14:35:12 137] isr        938  vad_set [in]  
+[2017/01/18 14:35:12 137] isr        973  vad_enable :  true  
+[2017/01/18 14:35:12 137] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:12 137] isr        992  vad_eos :  500  
+[2017/01/18 14:35:12 137] isr        897  enable_vad [in]  
+[2017/01/18 14:35:12 138] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:12 138] isr        932  enable_vad [out]  
+[2017/01/18 14:35:12 138] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:12 138] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:12 138] isr        1003 local_session_begin  
+[2017/01/18 14:35:12 140] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:12 140] isr        1546 6400  1  
+[2017/01/18 14:35:12 140] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:12 142] isr        845  [aud] speech start  
+[2017/01/18 14:35:12 341] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:12 341] isr        1546 6400  2  
+[2017/01/18 14:35:12 542] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:12 542] isr        1546 6400  2  
+[2017/01/18 14:35:12 743] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:12 743] isr        1546 6400  2  
+[2017/01/18 14:35:12 944] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:12 944] isr        1546 6400  2  
+[2017/01/18 14:35:13 144] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:13 144] isr        1546 6400  2  
+[2017/01/18 14:35:13 345] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:13 345] isr        1546 6400  2  
+[2017/01/18 14:35:13 447] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:13 447] isr        1546 2498  2  
+[2017/01/18 14:35:13 549] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:13 549] isr        1546 0  4  
+[2017/01/18 14:35:13 549] isr        1579 aud end, USER  
+[2017/01/18 14:35:13 549] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:13 549] isr        1297 0  nil  2  
+[2017/01/18 14:35:13 551] isr        855  [aud] speech end  
+[2017/01/18 14:35:13 552] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:13 650] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:13 650] isr        1297 0  nil  2  
+[2017/01/18 14:35:13 752] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:13 752] isr        1297 0  nil  2  
+[2017/01/18 14:35:13 789] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 14:35:13 789] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 14:35:13 790] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:13 790] isr        774  local session recognized end!  
+[2017/01/18 14:35:13 852] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:13 852] isr        1297 0  nil  5  
+[2017/01/18 14:35:13 953] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:13 953] isr        1346 session_end() [in]  
+[2017/01/18 14:35:13 954] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:13 956] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:13 957] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:34 096 
+============================================================
+[2017/01/18 14:35:34 096] isr        1641 isr loaded!  
+[2017/01/18 14:35:34 096] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3cf8378) 
+[2017/01/18 14:35:34 096] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:34 096] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 14:35:34 098] isr        938  vad_set [in]  
+[2017/01/18 14:35:34 098] isr        973  vad_enable :  true  
+[2017/01/18 14:35:34 098] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:34 098] isr        992  vad_eos :  500  
+[2017/01/18 14:35:34 098] isr        897  enable_vad [in]  
+[2017/01/18 14:35:34 098] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:34 098] isr        932  enable_vad [out]  
+[2017/01/18 14:35:34 099] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:34 099] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:34 099] isr        1003 local_session_begin  
+[2017/01/18 14:35:34 334] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:34 334] isr        1546 6400  1  
+[2017/01/18 14:35:34 334] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:34 338] isr        845  [aud] speech start  
+[2017/01/18 14:35:34 536] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:34 536] isr        1546 6400  2  
+[2017/01/18 14:35:34 737] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:34 737] isr        1546 6400  2  
+[2017/01/18 14:35:34 938] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:34 938] isr        1546 6400  2  
+[2017/01/18 14:35:35 141] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:35 141] isr        1546 6400  2  
+[2017/01/18 14:35:35 342] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:35 342] isr        1546 6400  2  
+[2017/01/18 14:35:35 543] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:35 543] isr        1546 6400  2  
+[2017/01/18 14:35:35 744] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:35 744] isr        1546 6400  2  
+[2017/01/18 14:35:35 946] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:35 947] isr        1546 6400  2  
+[2017/01/18 14:35:36 148] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:36 148] isr        1546 6400  2  
+[2017/01/18 14:35:36 348] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:36 348] isr        1546 6400  2  
+[2017/01/18 14:35:36 549] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:36 549] isr        1546 6400  2  
+[2017/01/18 14:35:36 750] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:36 750] isr        1546 6400  2  
+[2017/01/18 14:35:36 951] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:36 951] isr        1546 6400  2  
+[2017/01/18 14:35:37 153] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:37 153] isr        1546 6400  2  
+[2017/01/18 14:35:37 355] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:37 355] isr        1546 6400  2  
+[2017/01/18 14:35:37 555] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:37 555] isr        1546 6400  2  
+[2017/01/18 14:35:37 562] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:37 572] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 14:35:37 572] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:37 572] isr        774  local session recognized end!  
+[2017/01/18 14:35:37 572] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 14:35:37 756] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:37 756] isr        1546 6400  2  
+[2017/01/18 14:35:37 757] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:37 757] isr        1546 0  4  
+[2017/01/18 14:35:37 757] isr        1579 aud end, USER  
+[2017/01/18 14:35:37 757] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:37 757] isr        1297 0  nil  5  
+[2017/01/18 14:35:37 760] isr        855  [aud] speech end  
+[2017/01/18 14:35:37 859] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:37 859] isr        1346 session_end() [in]  
+[2017/01/18 14:35:37 859] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:37 861] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:37 861] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:38 007 
+============================================================
+[2017/01/18 14:35:38 007] isr        1641 isr loaded!  
+[2017/01/18 14:35:38 009] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3f27b58) 
+[2017/01/18 14:35:38 009] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:38 009] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 14:35:38 009] isr        938  vad_set [in]  
+[2017/01/18 14:35:38 009] isr        973  vad_enable :  true  
+[2017/01/18 14:35:38 010] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:38 010] isr        992  vad_eos :  500  
+[2017/01/18 14:35:38 010] isr        897  enable_vad [in]  
+[2017/01/18 14:35:38 010] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:38 012] isr        932  enable_vad [out]  
+[2017/01/18 14:35:38 012] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:38 012] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:38 012] isr        1003 local_session_begin  
+[2017/01/18 14:35:38 013] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:38 013] isr        1546 6400  1  
+[2017/01/18 14:35:38 013] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:38 016] isr        845  [aud] speech start  
+[2017/01/18 14:35:38 115] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:38 115] isr        1546 6400  2  
+[2017/01/18 14:35:38 318] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:38 318] isr        1546 6400  2  
+[2017/01/18 14:35:38 519] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:38 519] isr        1546 6400  2  
+[2017/01/18 14:35:38 720] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:38 720] isr        1546 6400  2  
+[2017/01/18 14:35:38 923] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:38 923] isr        1546 6400  2  
+[2017/01/18 14:35:39 124] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:39 124] isr        1546 6400  2  
+[2017/01/18 14:35:39 325] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:39 325] isr        1546 6400  2  
+[2017/01/18 14:35:39 332] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 14:35:39 528] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:39 528] isr        1546 6400  2  
+[2017/01/18 14:35:39 730] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:39 730] isr        1546 6400  2  
+[2017/01/18 14:35:39 730] isr        855  [aud] speech end  
+[2017/01/18 14:35:39 730] isr        872  aud end, MSC VAD  
+[2017/01/18 14:35:39 733] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:39 799] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(5968cd8) 
+[2017/01/18 14:35:39 799] isr        661  process_result call:  local  udata(5968cd8) 0  2  
+[2017/01/18 14:35:39 801] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:39 801] isr        774  local session recognized end!  
+[2017/01/18 14:35:39 930] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:39 930] isr        1546 6400  2  
+[2017/01/18 14:35:39 931] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:39 931] isr        1546 0  4  
+[2017/01/18 14:35:39 933] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:39 933] isr        1297 0  udata(5968cd8) 5  
+[2017/01/18 14:35:40 045] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:40 045] isr        1346 session_end() [in]  
+[2017/01/18 14:35:40 045] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:40 046] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:40 046] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:40 177 
+============================================================
+[2017/01/18 14:35:40 177] isr        1641 isr loaded!  
+[2017/01/18 14:35:40 177] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(593fbe8) 
+[2017/01/18 14:35:40 177] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:40 177] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 14:35:40 180] isr        938  vad_set [in]  
+[2017/01/18 14:35:40 180] isr        973  vad_enable :  true  
+[2017/01/18 14:35:40 180] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:40 180] isr        992  vad_eos :  500  
+[2017/01/18 14:35:40 180] isr        897  enable_vad [in]  
+[2017/01/18 14:35:40 180] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:40 180] isr        932  enable_vad [out]  
+[2017/01/18 14:35:40 180] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:40 180] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:40 180] isr        1003 local_session_begin  
+[2017/01/18 14:35:40 183] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:40 183] isr        1546 6400  1  
+[2017/01/18 14:35:40 183] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:40 186] isr        845  [aud] speech start  
+[2017/01/18 14:35:40 384] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:40 384] isr        1546 6400  2  
+[2017/01/18 14:35:40 585] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:40 585] isr        1546 6400  2  
+[2017/01/18 14:35:40 786] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:40 786] isr        1546 6400  2  
+[2017/01/18 14:35:40 987] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:40 987] isr        1546 6400  2  
+[2017/01/18 14:35:41 190] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:41 190] isr        1546 6400  2  
+[2017/01/18 14:35:41 391] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:41 391] isr        1546 6400  2  
+[2017/01/18 14:35:41 592] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:41 592] isr        1546 6400  2  
+[2017/01/18 14:35:41 792] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:41 792] isr        1546 6400  2  
+[2017/01/18 14:35:41 993] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:41 994] isr        1546 6400  2  
+[2017/01/18 14:35:42 196] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:42 196] isr        1546 6400  2  
+[2017/01/18 14:35:42 397] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:42 397] isr        1546 6400  2  
+[2017/01/18 14:35:42 598] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:42 598] isr        1546 6400  2  
+[2017/01/18 14:35:42 799] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:42 799] isr        1546 6400  2  
+[2017/01/18 14:35:42 802] isr        855  [aud] speech end  
+[2017/01/18 14:35:42 802] isr        872  aud end, MSC VAD  
+[2017/01/18 14:35:42 803] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:43 002] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:43 002] isr        1546 6400  2  
+[2017/01/18 14:35:43 003] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:43 003] isr        1546 0  4  
+[2017/01/18 14:35:43 003] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:43 003] isr        1297 0  nil  2  
+[2017/01/18 14:35:43 104] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:43 104] isr        1297 0  nil  2  
+[2017/01/18 14:35:43 200] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 14:35:43 201] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 14:35:43 201] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:43 201] isr        774  local session recognized end!  
+[2017/01/18 14:35:43 204] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:43 204] isr        1297 0  nil  5  
+[2017/01/18 14:35:43 308] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:43 308] isr        1346 session_end() [in]  
+[2017/01/18 14:35:43 308] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:43 309] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:43 311] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:43 424 
+============================================================
+[2017/01/18 14:35:43 424] isr        1641 isr loaded!  
+[2017/01/18 14:35:43 426] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3d497d8) 
+[2017/01/18 14:35:43 426] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:43 426] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 14:35:43 427] isr        938  vad_set [in]  
+[2017/01/18 14:35:43 427] isr        973  vad_enable :  true  
+[2017/01/18 14:35:43 427] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:43 427] isr        992  vad_eos :  500  
+[2017/01/18 14:35:43 427] isr        897  enable_vad [in]  
+[2017/01/18 14:35:43 427] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:43 427] isr        932  enable_vad [out]  
+[2017/01/18 14:35:43 427] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:43 427] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:43 427] isr        1003 local_session_begin  
+[2017/01/18 14:35:43 428] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:43 428] isr        1546 6400  1  
+[2017/01/18 14:35:43 430] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:43 433] isr        845  [aud] speech start  
+[2017/01/18 14:35:43 529] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:43 529] isr        1546 6400  2  
+[2017/01/18 14:35:43 631] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:43 631] isr        1546 6400  2  
+[2017/01/18 14:35:43 732] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:43 732] isr        1546 6400  2  
+[2017/01/18 14:35:43 933] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:43 934] isr        1546 6400  2  
+[2017/01/18 14:35:44 134] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:44 134] isr        1546 6400  2  
+[2017/01/18 14:35:44 335] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:44 335] isr        1546 6400  2  
+[2017/01/18 14:35:44 536] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:44 536] isr        1546 6400  2  
+[2017/01/18 14:35:44 739] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:44 739] isr        1546 6400  2  
+[2017/01/18 14:35:44 940] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:44 940] isr        1546 6400  2  
+[2017/01/18 14:35:45 141] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:45 141] isr        1546 6400  2  
+[2017/01/18 14:35:45 342] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:45 342] isr        1546 6400  2  
+[2017/01/18 14:35:45 543] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:45 543] isr        1546 6400  2  
+[2017/01/18 14:35:45 744] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:45 746] isr        1546 6400  2  
+[2017/01/18 14:35:45 947] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:45 947] isr        1546 6400  2  
+[2017/01/18 14:35:46 148] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:46 148] isr        1546 6400  2  
+[2017/01/18 14:35:46 349] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:46 349] isr        1546 6400  2  
+[2017/01/18 14:35:46 359] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:46 359] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 14:35:46 361] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:46 361] isr        774  local session recognized end!  
+[2017/01/18 14:35:46 361] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 14:35:46 551] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:46 551] isr        1546 6400  2  
+[2017/01/18 14:35:46 552] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:46 552] isr        1546 0  4  
+[2017/01/18 14:35:46 552] isr        1579 aud end, USER  
+[2017/01/18 14:35:46 552] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:46 552] isr        1297 0  nil  5  
+[2017/01/18 14:35:46 555] isr        855  [aud] speech end  
+[2017/01/18 14:35:46 654] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:46 654] isr        1346 session_end() [in]  
+[2017/01/18 14:35:46 654] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:46 655] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:46 657] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:46 772 
+============================================================
+[2017/01/18 14:35:46 772] isr        1641 isr loaded!  
+[2017/01/18 14:35:46 773] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3d7dbd0) 
+[2017/01/18 14:35:46 773] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:46 773] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 14:35:46 773] isr        938  vad_set [in]  
+[2017/01/18 14:35:46 773] isr        973  vad_enable :  true  
+[2017/01/18 14:35:46 773] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:46 773] isr        992  vad_eos :  500  
+[2017/01/18 14:35:46 773] isr        897  enable_vad [in]  
+[2017/01/18 14:35:46 775] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:46 775] isr        932  enable_vad [out]  
+[2017/01/18 14:35:46 775] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:46 775] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:46 775] isr        1003 local_session_begin  
+[2017/01/18 14:35:46 776] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:46 776] isr        1546 6400  1  
+[2017/01/18 14:35:46 776] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:46 780] isr        845  [aud] speech start  
+[2017/01/18 14:35:46 977] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:46 979] isr        1546 6400  2  
+[2017/01/18 14:35:47 180] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:47 180] isr        1546 6400  2  
+[2017/01/18 14:35:47 381] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:47 381] isr        1546 6400  2  
+[2017/01/18 14:35:47 582] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:47 582] isr        1546 6400  2  
+[2017/01/18 14:35:47 783] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:47 783] isr        1546 6400  2  
+[2017/01/18 14:35:47 984] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:47 984] isr        1546 6400  2  
+[2017/01/18 14:35:48 187] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:48 187] isr        1546 6400  2  
+[2017/01/18 14:35:48 388] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:48 388] isr        1546 6400  2  
+[2017/01/18 14:35:48 588] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:48 588] isr        1546 6400  2  
+[2017/01/18 14:35:48 789] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:48 790] isr        1546 6400  2  
+[2017/01/18 14:35:48 993] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:48 993] isr        1546 6400  2  
+[2017/01/18 14:35:49 194] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:49 194] isr        1546 6400  2  
+[2017/01/18 14:35:49 394] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:49 394] isr        1546 6400  2  
+[2017/01/18 14:35:49 596] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:49 596] isr        1546 6400  2  
+[2017/01/18 14:35:49 798] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:49 798] isr        1546 6400  2  
+[2017/01/18 14:35:50 000] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:50 000] isr        1546 6400  2  
+[2017/01/18 14:35:50 009] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:50 009] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 14:35:50 010] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:50 010] isr        774  local session recognized end!  
+[2017/01/18 14:35:50 010] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 14:35:50 201] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:50 201] isr        1546 6400  2  
+[2017/01/18 14:35:50 203] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:50 203] isr        1546 0  4  
+[2017/01/18 14:35:50 203] isr        1579 aud end, USER  
+[2017/01/18 14:35:50 203] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:50 203] isr        1297 0  nil  5  
+[2017/01/18 14:35:50 206] isr        855  [aud] speech end  
+[2017/01/18 14:35:50 305] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:50 305] isr        1346 session_end() [in]  
+[2017/01/18 14:35:50 305] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:50 311] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:50 312] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 14:35:50 424 
+============================================================
+[2017/01/18 14:35:50 426] isr        1641 isr loaded!  
+[2017/01/18 14:35:50 426] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(5957d78) 
+[2017/01/18 14:35:50 426] isr        1525 ASR_MSG_SSB  
+[2017/01/18 14:35:50 426] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 14:35:50 427] isr        938  vad_set [in]  
+[2017/01/18 14:35:50 427] isr        973  vad_enable :  true  
+[2017/01/18 14:35:50 427] isr        991  vad_bos :  10000  
+[2017/01/18 14:35:50 427] isr        992  vad_eos :  500  
+[2017/01/18 14:35:50 427] isr        897  enable_vad [in]  
+[2017/01/18 14:35:50 427] isr        929  vad enabled!  500  10000  
+[2017/01/18 14:35:50 427] isr        932  enable_vad [out]  
+[2017/01/18 14:35:50 427] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 14:35:50 427] isr        1174 cur_engine_type =   local  
+[2017/01/18 14:35:50 427] isr        1003 local_session_begin  
+[2017/01/18 14:35:50 430] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:50 430] isr        1546 6400  1  
+[2017/01/18 14:35:50 430] isr        1550 once_bytes:   6400  
+[2017/01/18 14:35:50 433] isr        845  [aud] speech start  
+[2017/01/18 14:35:50 529] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:50 529] isr        1546 6400  2  
+[2017/01/18 14:35:50 732] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:50 732] isr        1546 6400  2  
+[2017/01/18 14:35:50 933] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:50 933] isr        1546 6400  2  
+[2017/01/18 14:35:51 134] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:51 134] isr        1546 6400  2  
+[2017/01/18 14:35:51 335] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:51 335] isr        1546 6400  2  
+[2017/01/18 14:35:51 538] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:51 538] isr        1546 6400  2  
+[2017/01/18 14:35:51 739] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:51 739] isr        1546 6400  2  
+[2017/01/18 14:35:51 940] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:51 940] isr        1546 6400  2  
+[2017/01/18 14:35:52 141] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:52 141] isr        1546 6400  2  
+[2017/01/18 14:35:52 342] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:52 342] isr        1546 6400  2  
+[2017/01/18 14:35:52 543] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:52 543] isr        1546 6400  2  
+[2017/01/18 14:35:52 744] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:52 746] isr        1546 6400  2  
+[2017/01/18 14:35:52 946] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:52 947] isr        1546 6400  2  
+[2017/01/18 14:35:53 148] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:53 148] isr        1546 6400  2  
+[2017/01/18 14:35:53 349] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:53 349] isr        1546 5378  2  
+[2017/01/18 14:35:53 450] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 14:35:53 450] isr        1546 0  4  
+[2017/01/18 14:35:53 450] isr        1579 aud end, USER  
+[2017/01/18 14:35:53 450] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:53 450] isr        1297 0  nil  2  
+[2017/01/18 14:35:53 451] isr        855  [aud] speech end  
+[2017/01/18 14:35:53 453] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 14:35:53 552] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:53 552] isr        1297 0  nil  2  
+[2017/01/18 14:35:53 653] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:53 653] isr        1297 0  nil  2  
+[2017/01/18 14:35:53 753] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:53 753] isr        1297 0  nil  2  
+[2017/01/18 14:35:53 834] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 14:35:53 834] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 14:35:53 834] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 14:35:53 834] isr        774  local session recognized end!  
+[2017/01/18 14:35:53 855] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 14:35:53 855] isr        1297 0  nil  5  
+[2017/01/18 14:35:53 956] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 14:35:53 957] isr        1346 session_end() [in]  
+[2017/01/18 14:35:53 957] isr        1367 local_session_end() [in]  
+[2017/01/18 14:35:53 959] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 14:35:53 960] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:21:24 165 
+============================================================
+[2017/01/18 15:21:24 165] isr        1641 isr loaded!  
+[2017/01/18 15:21:24 167] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3aecd00) 
+[2017/01/18 15:21:24 167] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:21:24 167] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 15:21:24 167] isr        938  vad_set [in]  
+[2017/01/18 15:21:24 167] isr        973  vad_enable :  true  
+[2017/01/18 15:21:24 167] isr        991  vad_bos :  10000  
+[2017/01/18 15:21:24 167] isr        992  vad_eos :  500  
+[2017/01/18 15:21:24 167] isr        897  enable_vad [in]  
+[2017/01/18 15:21:24 168] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:21:24 168] isr        932  enable_vad [out]  
+[2017/01/18 15:21:24 168] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:21:24 168] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:21:24 168] isr        1003 local_session_begin  
+[2017/01/18 15:21:24 398] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:24 398] isr        1546 6400  1  
+[2017/01/18 15:21:24 398] isr        1550 once_bytes:   6400  
+[2017/01/18 15:21:24 401] isr        845  [aud] speech start  
+[2017/01/18 15:21:24 599] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:24 599] isr        1546 6400  2  
+[2017/01/18 15:21:24 801] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:24 802] isr        1546 6400  2  
+[2017/01/18 15:21:25 003] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:25 003] isr        1546 6400  2  
+[2017/01/18 15:21:25 206] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:25 206] isr        1546 6400  2  
+[2017/01/18 15:21:25 407] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:25 407] isr        1546 6400  2  
+[2017/01/18 15:21:25 608] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:25 608] isr        1546 6400  2  
+[2017/01/18 15:21:25 809] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:25 809] isr        1546 6400  2  
+[2017/01/18 15:21:26 012] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:26 012] isr        1546 6400  2  
+[2017/01/18 15:21:26 213] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:26 213] isr        1546 6400  2  
+[2017/01/18 15:21:26 414] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:26 414] isr        1546 6400  2  
+[2017/01/18 15:21:26 617] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:26 617] isr        1546 6400  2  
+[2017/01/18 15:21:26 819] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:26 819] isr        1546 6400  2  
+[2017/01/18 15:21:27 019] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:27 019] isr        1546 6400  2  
+[2017/01/18 15:21:27 220] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:27 220] isr        1546 6400  2  
+[2017/01/18 15:21:27 421] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:27 423] isr        1546 6400  2  
+[2017/01/18 15:21:27 624] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:27 624] isr        1546 6400  2  
+[2017/01/18 15:21:27 631] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:21:27 632] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:21:27 632] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:21:27 632] isr        774  local session recognized end!  
+[2017/01/18 15:21:27 632] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:21:27 825] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:27 825] isr        1546 6400  2  
+[2017/01/18 15:21:27 825] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:27 825] isr        1546 0  4  
+[2017/01/18 15:21:27 825] isr        1579 aud end, USER  
+[2017/01/18 15:21:27 826] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:21:27 826] isr        1297 0  nil  5  
+[2017/01/18 15:21:27 829] isr        855  [aud] speech end  
+[2017/01/18 15:21:27 928] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:21:27 928] isr        1346 session_end() [in]  
+[2017/01/18 15:21:27 928] isr        1367 local_session_end() [in]  
+[2017/01/18 15:21:27 930] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:21:27 931] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:21:28 059 
+============================================================
+[2017/01/18 15:21:28 061] isr        1641 isr loaded!  
+[2017/01/18 15:21:28 061] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3b27c68) 
+[2017/01/18 15:21:28 061] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:21:28 061] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 15:21:28 062] isr        938  vad_set [in]  
+[2017/01/18 15:21:28 062] isr        973  vad_enable :  true  
+[2017/01/18 15:21:28 062] isr        991  vad_bos :  10000  
+[2017/01/18 15:21:28 062] isr        992  vad_eos :  500  
+[2017/01/18 15:21:28 062] isr        897  enable_vad [in]  
+[2017/01/18 15:21:28 062] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:21:28 062] isr        932  enable_vad [out]  
+[2017/01/18 15:21:28 062] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:21:28 063] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:21:28 063] isr        1003 local_session_begin  
+[2017/01/18 15:21:28 065] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:28 065] isr        1546 6400  1  
+[2017/01/18 15:21:28 065] isr        1550 once_bytes:   6400  
+[2017/01/18 15:21:28 068] isr        845  [aud] speech start  
+[2017/01/18 15:21:28 266] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:28 266] isr        1546 6400  2  
+[2017/01/18 15:21:28 469] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:28 469] isr        1546 6400  2  
+[2017/01/18 15:21:28 670] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:28 670] isr        1546 6400  2  
+[2017/01/18 15:21:28 677] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:21:28 872] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:28 872] isr        1546 6400  2  
+[2017/01/18 15:21:28 875] isr        855  [aud] speech end  
+[2017/01/18 15:21:28 875] isr        872  aud end, MSC VAD  
+[2017/01/18 15:21:28 878] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:21:28 992] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(573c490) 
+[2017/01/18 15:21:28 992] isr        661  process_result call:  local  udata(573c490) 67  2  
+[2017/01/18 15:21:28 992] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:21:28 992] isr        774  local session recognized end!  
+[2017/01/18 15:21:29 073] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:29 073] isr        1546 6400  2  
+[2017/01/18 15:21:29 075] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:29 075] isr        1546 0  4  
+[2017/01/18 15:21:29 075] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:21:29 075] isr        1297 0  udata(573c490) 5  
+[2017/01/18 15:21:29 180] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:21:29 180] isr        1346 session_end() [in]  
+[2017/01/18 15:21:29 180] isr        1367 local_session_end() [in]  
+[2017/01/18 15:21:29 181] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:21:29 183] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:21:29 299 
+============================================================
+[2017/01/18 15:21:29 299] isr        1641 isr loaded!  
+[2017/01/18 15:21:29 301] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3ae91d0) 
+[2017/01/18 15:21:29 301] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:21:29 301] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 15:21:29 302] isr        938  vad_set [in]  
+[2017/01/18 15:21:29 302] isr        973  vad_enable :  true  
+[2017/01/18 15:21:29 302] isr        991  vad_bos :  10000  
+[2017/01/18 15:21:29 302] isr        992  vad_eos :  500  
+[2017/01/18 15:21:29 302] isr        897  enable_vad [in]  
+[2017/01/18 15:21:29 302] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:21:29 302] isr        932  enable_vad [out]  
+[2017/01/18 15:21:29 302] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:21:29 302] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:21:29 302] isr        1003 local_session_begin  
+[2017/01/18 15:21:29 305] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:29 305] isr        1546 6400  1  
+[2017/01/18 15:21:29 305] isr        1550 once_bytes:   6400  
+[2017/01/18 15:21:29 308] isr        845  [aud] speech start  
+[2017/01/18 15:21:29 405] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:29 405] isr        1546 6400  2  
+[2017/01/18 15:21:29 607] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:29 607] isr        1546 6400  2  
+[2017/01/18 15:21:29 809] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:29 809] isr        1546 6400  2  
+[2017/01/18 15:21:30 009] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:30 009] isr        1546 6400  2  
+[2017/01/18 15:21:30 210] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:30 210] isr        1546 6400  2  
+[2017/01/18 15:21:30 411] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:30 411] isr        1546 6400  2  
+[2017/01/18 15:21:30 612] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:30 612] isr        1546 6400  2  
+[2017/01/18 15:21:30 813] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:30 815] isr        1546 6400  2  
+[2017/01/18 15:21:31 016] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:31 016] isr        1546 6400  2  
+[2017/01/18 15:21:31 217] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:31 217] isr        1546 6400  2  
+[2017/01/18 15:21:31 420] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:31 420] isr        1546 6400  2  
+[2017/01/18 15:21:31 621] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:31 621] isr        1546 6400  2  
+[2017/01/18 15:21:31 822] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:31 822] isr        1546 6400  2  
+[2017/01/18 15:21:32 023] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:32 023] isr        1546 6400  2  
+[2017/01/18 15:21:32 223] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:32 223] isr        1546 6400  2  
+[2017/01/18 15:21:32 426] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:32 426] isr        1546 6400  2  
+[2017/01/18 15:21:32 436] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:21:32 437] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:21:32 437] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:21:32 437] isr        774  local session recognized end!  
+[2017/01/18 15:21:32 437] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:21:32 628] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:32 628] isr        1546 6400  2  
+[2017/01/18 15:21:32 628] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:32 628] isr        1546 0  4  
+[2017/01/18 15:21:32 628] isr        1579 aud end, USER  
+[2017/01/18 15:21:32 628] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:21:32 628] isr        1297 0  nil  5  
+[2017/01/18 15:21:32 631] isr        855  [aud] speech end  
+[2017/01/18 15:21:32 730] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:21:32 730] isr        1346 session_end() [in]  
+[2017/01/18 15:21:32 730] isr        1367 local_session_end() [in]  
+[2017/01/18 15:21:32 732] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:21:32 733] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:21:32 851 
+============================================================
+[2017/01/18 15:21:32 851] isr        1641 isr loaded!  
+[2017/01/18 15:21:32 851] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3cd9e08) 
+[2017/01/18 15:21:32 851] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:21:32 851] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 15:21:32 854] isr        938  vad_set [in]  
+[2017/01/18 15:21:32 854] isr        973  vad_enable :  true  
+[2017/01/18 15:21:32 854] isr        991  vad_bos :  10000  
+[2017/01/18 15:21:32 854] isr        992  vad_eos :  500  
+[2017/01/18 15:21:32 854] isr        897  enable_vad [in]  
+[2017/01/18 15:21:32 855] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:21:32 855] isr        932  enable_vad [out]  
+[2017/01/18 15:21:32 855] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:21:32 855] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:21:32 855] isr        1003 local_session_begin  
+[2017/01/18 15:21:32 857] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:32 857] isr        1546 6400  1  
+[2017/01/18 15:21:32 857] isr        1550 once_bytes:   6400  
+[2017/01/18 15:21:32 859] isr        845  [aud] speech start  
+[2017/01/18 15:21:33 059] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:33 059] isr        1546 6400  2  
+[2017/01/18 15:21:33 260] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:33 260] isr        1546 6400  2  
+[2017/01/18 15:21:33 461] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:33 461] isr        1546 6400  2  
+[2017/01/18 15:21:33 663] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:33 663] isr        1546 6400  2  
+[2017/01/18 15:21:33 865] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:33 865] isr        1546 6400  2  
+[2017/01/18 15:21:34 065] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:34 065] isr        1546 6400  2  
+[2017/01/18 15:21:34 266] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:34 266] isr        1546 6400  2  
+[2017/01/18 15:21:34 467] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:34 467] isr        1546 6400  2  
+[2017/01/18 15:21:34 670] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:34 670] isr        1546 6400  2  
+[2017/01/18 15:21:34 671] isr        855  [aud] speech end  
+[2017/01/18 15:21:34 671] isr        872  aud end, MSC VAD  
+[2017/01/18 15:21:34 673] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:21:34 862] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 15:21:34 862] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:21:34 864] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:21:34 864] isr        774  local session recognized end!  
+[2017/01/18 15:21:34 871] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:34 871] isr        1546 6400  2  
+[2017/01/18 15:21:34 872] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:34 872] isr        1546 0  4  
+[2017/01/18 15:21:34 872] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:21:34 872] isr        1297 0  nil  5  
+[2017/01/18 15:21:34 974] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:21:34 974] isr        1346 session_end() [in]  
+[2017/01/18 15:21:34 974] isr        1367 local_session_end() [in]  
+[2017/01/18 15:21:35 002] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:21:35 003] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:21:35 115 
+============================================================
+[2017/01/18 15:21:35 115] isr        1641 isr loaded!  
+[2017/01/18 15:21:35 115] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(57409d8) 
+[2017/01/18 15:21:35 117] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:21:35 117] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = xml, result_encoding = GB2312, ═¤¤¤¤лллллллл■ю■ю■  nil  
+[2017/01/18 15:21:35 117] isr        938  vad_set [in]  
+[2017/01/18 15:21:35 117] isr        973  vad_enable :  true  
+[2017/01/18 15:21:35 117] isr        991  vad_bos :  10000  
+[2017/01/18 15:21:35 117] isr        992  vad_eos :  500  
+[2017/01/18 15:21:35 117] isr        897  enable_vad [in]  
+[2017/01/18 15:21:35 118] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:21:35 118] isr        932  enable_vad [out]  
+[2017/01/18 15:21:35 118] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:21:35 118] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:21:35 118] isr        1003 local_session_begin  
+[2017/01/18 15:21:35 119] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:35 119] isr        1546 6400  1  
+[2017/01/18 15:21:35 121] isr        1550 once_bytes:   6400  
+[2017/01/18 15:21:35 122] isr        845  [aud] speech start  
+[2017/01/18 15:21:35 220] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:35 220] isr        1546 6400  2  
+[2017/01/18 15:21:35 423] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:35 423] isr        1546 6400  2  
+[2017/01/18 15:21:35 624] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:35 624] isr        1546 6400  2  
+[2017/01/18 15:21:35 825] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:35 825] isr        1546 6400  2  
+[2017/01/18 15:21:36 026] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:36 026] isr        1546 6400  2  
+[2017/01/18 15:21:36 227] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:36 227] isr        1546 6400  2  
+[2017/01/18 15:21:36 428] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:36 428] isr        1546 6400  2  
+[2017/01/18 15:21:36 630] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:36 630] isr        1546 6400  2  
+[2017/01/18 15:21:36 831] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:36 831] isr        1546 6400  2  
+[2017/01/18 15:21:37 032] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:37 032] isr        1546 6400  2  
+[2017/01/18 15:21:37 233] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:37 233] isr        1546 6400  2  
+[2017/01/18 15:21:37 434] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:37 434] isr        1546 6400  2  
+[2017/01/18 15:21:37 634] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:37 635] isr        1546 6400  2  
+[2017/01/18 15:21:37 836] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:37 836] isr        1546 6400  2  
+[2017/01/18 15:21:37 937] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:37 937] isr        1546 2178  2  
+[2017/01/18 15:21:38 038] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:21:38 038] isr        1546 0  4  
+[2017/01/18 15:21:38 038] isr        1579 aud end, USER  
+[2017/01/18 15:21:38 039] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:21:38 039] isr        1297 0  nil  2  
+[2017/01/18 15:21:38 039] isr        855  [aud] speech end  
+[2017/01/18 15:21:38 040] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:21:38 140] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:21:38 140] isr        1297 0  nil  2  
+[2017/01/18 15:21:38 232] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 15:21:38 232] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:21:38 232] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:21:38 232] isr        774  local session recognized end!  
+[2017/01/18 15:21:38 242] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:21:38 242] isr        1297 0  nil  5  
+[2017/01/18 15:21:38 342] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:21:38 342] isr        1346 session_end() [in]  
+[2017/01/18 15:21:38 342] isr        1367 local_session_end() [in]  
+[2017/01/18 15:21:38 345] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:21:38 345] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:22:11 549 
+============================================================
+[2017/01/18 15:22:11 549] isr        1641 isr loaded!  
+[2017/01/18 15:22:11 549] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3265e90) 
+[2017/01/18 15:22:11 551] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:22:11 551] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:22:11 552] isr        938  vad_set [in]  
+[2017/01/18 15:22:11 552] isr        973  vad_enable :  true  
+[2017/01/18 15:22:11 552] isr        991  vad_bos :  10000  
+[2017/01/18 15:22:11 552] isr        992  vad_eos :  500  
+[2017/01/18 15:22:11 552] isr        897  enable_vad [in]  
+[2017/01/18 15:22:11 552] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:22:11 552] isr        932  enable_vad [out]  
+[2017/01/18 15:22:11 553] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:22:11 553] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:22:11 553] isr        1003 local_session_begin  
+[2017/01/18 15:22:11 782] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:11 782] isr        1546 6400  1  
+[2017/01/18 15:22:11 782] isr        1550 once_bytes:   6400  
+[2017/01/18 15:22:11 785] isr        845  [aud] speech start  
+[2017/01/18 15:22:11 983] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:11 983] isr        1546 6400  2  
+[2017/01/18 15:22:12 184] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:12 184] isr        1546 6400  2  
+[2017/01/18 15:22:12 385] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:12 385] isr        1546 6400  2  
+[2017/01/18 15:22:12 586] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:12 586] isr        1546 6400  2  
+[2017/01/18 15:22:12 788] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:12 789] isr        1546 6400  2  
+[2017/01/18 15:22:12 990] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:12 990] isr        1546 6400  2  
+[2017/01/18 15:22:13 190] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:13 190] isr        1546 6400  2  
+[2017/01/18 15:22:13 198] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:22:13 391] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:13 391] isr        1546 6400  2  
+[2017/01/18 15:22:13 592] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:13 592] isr        1546 6400  2  
+[2017/01/18 15:22:13 793] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:13 793] isr        1546 6400  2  
+[2017/01/18 15:22:13 796] isr        855  [aud] speech end  
+[2017/01/18 15:22:13 796] isr        872  aud end, MSC VAD  
+[2017/01/18 15:22:13 798] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:22:13 891] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(4e1a468) 
+[2017/01/18 15:22:13 891] isr        661  process_result call:  local  udata(4e1a468) 60  2  
+[2017/01/18 15:22:13 892] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:22:13 892] isr        774  local session recognized end!  
+[2017/01/18 15:22:13 994] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:13 994] isr        1546 6400  2  
+[2017/01/18 15:22:13 996] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:13 996] isr        1546 0  4  
+[2017/01/18 15:22:13 996] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:22:13 996] isr        1297 0  udata(4e1a468) 5  
+============================================================
+Time  2017/01/18 15:22:35 085 
+============================================================
+[2017/01/18 15:22:35 086] isr        1641 isr loaded!  
+[2017/01/18 15:22:35 086] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3c375f8) 
+[2017/01/18 15:22:35 088] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:22:35 088] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:22:35 089] isr        938  vad_set [in]  
+[2017/01/18 15:22:35 089] isr        973  vad_enable :  true  
+[2017/01/18 15:22:35 089] isr        991  vad_bos :  10000  
+[2017/01/18 15:22:35 091] isr        992  vad_eos :  500  
+[2017/01/18 15:22:35 091] isr        897  enable_vad [in]  
+[2017/01/18 15:22:35 092] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:22:35 092] isr        932  enable_vad [out]  
+[2017/01/18 15:22:35 092] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:22:35 092] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:22:35 092] isr        1003 local_session_begin  
+[2017/01/18 15:22:35 309] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:35 309] isr        1546 6400  1  
+[2017/01/18 15:22:35 309] isr        1550 once_bytes:   6400  
+[2017/01/18 15:22:35 312] isr        845  [aud] speech start  
+[2017/01/18 15:22:35 525] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:35 525] isr        1546 6400  2  
+[2017/01/18 15:22:35 726] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:35 726] isr        1546 6400  2  
+[2017/01/18 15:22:35 927] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:35 927] isr        1546 6400  2  
+[2017/01/18 15:22:36 128] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:36 128] isr        1546 6400  2  
+[2017/01/18 15:22:36 329] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:36 329] isr        1546 6400  2  
+[2017/01/18 15:22:36 530] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:36 530] isr        1546 6400  2  
+[2017/01/18 15:22:36 733] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:36 733] isr        1546 6400  2  
+[2017/01/18 15:22:36 934] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:36 934] isr        1546 6400  2  
+[2017/01/18 15:22:37 134] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:37 135] isr        1546 6400  2  
+[2017/01/18 15:22:37 336] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:37 336] isr        1546 6400  2  
+[2017/01/18 15:22:37 538] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:37 538] isr        1546 6400  2  
+[2017/01/18 15:22:37 739] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:37 739] isr        1546 6400  2  
+[2017/01/18 15:22:37 940] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:37 940] isr        1546 6400  2  
+[2017/01/18 15:22:38 141] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:38 142] isr        1546 6400  2  
+[2017/01/18 15:22:38 344] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:38 344] isr        1546 6400  2  
+[2017/01/18 15:22:38 545] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:38 546] isr        1546 6400  2  
+[2017/01/18 15:22:38 555] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:22:38 555] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:22:38 555] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:22:38 555] isr        774  local session recognized end!  
+[2017/01/18 15:22:38 555] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:22:38 746] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:38 746] isr        1546 6400  2  
+[2017/01/18 15:22:38 747] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:38 747] isr        1546 0  4  
+[2017/01/18 15:22:38 747] isr        1579 aud end, USER  
+[2017/01/18 15:22:38 749] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:22:38 749] isr        1297 0  nil  5  
+[2017/01/18 15:22:38 752] isr        855  [aud] speech end  
+[2017/01/18 15:22:38 849] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:22:38 849] isr        1346 session_end() [in]  
+[2017/01/18 15:22:38 849] isr        1367 local_session_end() [in]  
+[2017/01/18 15:22:38 851] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:22:38 851] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:22:38 980 
+============================================================
+[2017/01/18 15:22:38 980] isr        1641 isr loaded!  
+[2017/01/18 15:22:38 980] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(587e3a8) 
+[2017/01/18 15:22:38 980] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:22:38 982] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:22:38 983] isr        938  vad_set [in]  
+[2017/01/18 15:22:38 983] isr        973  vad_enable :  true  
+[2017/01/18 15:22:38 983] isr        991  vad_bos :  10000  
+[2017/01/18 15:22:38 983] isr        992  vad_eos :  500  
+[2017/01/18 15:22:38 983] isr        897  enable_vad [in]  
+[2017/01/18 15:22:38 983] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:22:38 983] isr        932  enable_vad [out]  
+[2017/01/18 15:22:38 983] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:22:38 983] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:22:38 983] isr        1003 local_session_begin  
+[2017/01/18 15:22:38 986] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:38 986] isr        1546 6400  1  
+[2017/01/18 15:22:38 986] isr        1550 once_bytes:   6400  
+[2017/01/18 15:22:38 989] isr        845  [aud] speech start  
+[2017/01/18 15:22:39 187] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:39 187] isr        1546 6400  2  
+[2017/01/18 15:22:39 388] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:39 388] isr        1546 6400  2  
+[2017/01/18 15:22:39 589] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:39 591] isr        1546 6400  2  
+[2017/01/18 15:22:39 792] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:39 792] isr        1546 6400  2  
+[2017/01/18 15:22:39 993] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:39 994] isr        1546 6400  2  
+[2017/01/18 15:22:40 196] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:40 196] isr        1546 6400  2  
+[2017/01/18 15:22:40 398] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:40 398] isr        1546 6400  2  
+[2017/01/18 15:22:40 598] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:40 599] isr        1546 6400  2  
+[2017/01/18 15:22:40 801] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:40 801] isr        1546 6400  2  
+[2017/01/18 15:22:41 002] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:41 002] isr        1546 6400  2  
+[2017/01/18 15:22:41 102] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:41 102] isr        1546 6400  2  
+[2017/01/18 15:22:41 305] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:41 305] isr        1546 6400  2  
+[2017/01/18 15:22:41 505] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:41 506] isr        1546 6400  2  
+[2017/01/18 15:22:41 706] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:41 707] isr        1546 6400  2  
+[2017/01/18 15:22:41 907] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:41 907] isr        1546 6400  2  
+[2017/01/18 15:22:42 108] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:42 108] isr        1546 6400  2  
+[2017/01/18 15:22:42 124] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:22:42 124] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:22:42 125] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:22:42 125] isr        774  local session recognized end!  
+[2017/01/18 15:22:42 125] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:22:42 311] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:42 311] isr        1546 6400  2  
+[2017/01/18 15:22:42 312] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:42 312] isr        1546 0  4  
+[2017/01/18 15:22:42 312] isr        1579 aud end, USER  
+[2017/01/18 15:22:42 312] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:22:42 312] isr        1297 0  nil  5  
+[2017/01/18 15:22:42 315] isr        855  [aud] speech end  
+[2017/01/18 15:22:42 414] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:22:42 414] isr        1346 session_end() [in]  
+[2017/01/18 15:22:42 414] isr        1367 local_session_end() [in]  
+[2017/01/18 15:22:42 415] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:22:42 417] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:22:42 530 
+============================================================
+[2017/01/18 15:22:42 530] isr        1641 isr loaded!  
+[2017/01/18 15:22:42 532] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3c45c88) 
+[2017/01/18 15:22:42 532] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:22:42 532] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:22:42 532] isr        938  vad_set [in]  
+[2017/01/18 15:22:42 532] isr        973  vad_enable :  true  
+[2017/01/18 15:22:42 532] isr        991  vad_bos :  10000  
+[2017/01/18 15:22:42 532] isr        992  vad_eos :  500  
+[2017/01/18 15:22:42 532] isr        897  enable_vad [in]  
+[2017/01/18 15:22:42 533] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:22:42 533] isr        932  enable_vad [out]  
+[2017/01/18 15:22:42 533] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:22:42 533] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:22:42 533] isr        1003 local_session_begin  
+[2017/01/18 15:22:42 536] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:42 536] isr        1546 6400  1  
+[2017/01/18 15:22:42 536] isr        1550 once_bytes:   6400  
+[2017/01/18 15:22:42 539] isr        845  [aud] speech start  
+[2017/01/18 15:22:42 736] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:42 736] isr        1546 6400  2  
+[2017/01/18 15:22:42 938] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:42 938] isr        1546 6400  2  
+[2017/01/18 15:22:43 141] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:43 141] isr        1546 6400  2  
+[2017/01/18 15:22:43 341] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:43 342] isr        1546 6400  2  
+[2017/01/18 15:22:43 542] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:43 542] isr        1546 6400  2  
+[2017/01/18 15:22:43 743] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:43 743] isr        1546 6400  2  
+[2017/01/18 15:22:43 944] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:43 944] isr        1546 6400  2  
+[2017/01/18 15:22:44 145] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:44 145] isr        1546 6400  2  
+[2017/01/18 15:22:44 346] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:44 346] isr        1546 6400  2  
+[2017/01/18 15:22:44 548] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:44 548] isr        1546 6400  2  
+[2017/01/18 15:22:44 750] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:44 750] isr        1546 6400  2  
+[2017/01/18 15:22:44 951] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:44 951] isr        1546 6400  2  
+[2017/01/18 15:22:45 151] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:45 153] isr        1546 6400  2  
+[2017/01/18 15:22:45 354] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:45 354] isr        1546 6400  2  
+[2017/01/18 15:22:45 555] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:45 555] isr        1546 6400  2  
+[2017/01/18 15:22:45 756] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:45 756] isr        1546 6400  2  
+[2017/01/18 15:22:45 765] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:22:45 766] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:22:45 766] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:22:45 766] isr        774  local session recognized end!  
+[2017/01/18 15:22:45 766] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:22:45 957] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:45 957] isr        1546 6400  2  
+[2017/01/18 15:22:45 957] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:45 957] isr        1546 0  4  
+[2017/01/18 15:22:45 957] isr        1579 aud end, USER  
+[2017/01/18 15:22:45 957] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:22:45 959] isr        1297 0  nil  5  
+[2017/01/18 15:22:45 961] isr        855  [aud] speech end  
+[2017/01/18 15:22:46 059] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:22:46 059] isr        1346 session_end() [in]  
+[2017/01/18 15:22:46 059] isr        1367 local_session_end() [in]  
+[2017/01/18 15:22:46 061] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:22:46 062] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:22:46 177 
+============================================================
+[2017/01/18 15:22:46 177] isr        1641 isr loaded!  
+[2017/01/18 15:22:46 177] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(5879090) 
+[2017/01/18 15:22:46 177] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:22:46 177] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:22:46 178] isr        938  vad_set [in]  
+[2017/01/18 15:22:46 178] isr        973  vad_enable :  true  
+[2017/01/18 15:22:46 180] isr        991  vad_bos :  10000  
+[2017/01/18 15:22:46 180] isr        992  vad_eos :  500  
+[2017/01/18 15:22:46 180] isr        897  enable_vad [in]  
+[2017/01/18 15:22:46 180] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:22:46 180] isr        932  enable_vad [out]  
+[2017/01/18 15:22:46 180] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:22:46 180] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:22:46 180] isr        1003 local_session_begin  
+[2017/01/18 15:22:46 183] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:46 183] isr        1546 6400  1  
+[2017/01/18 15:22:46 183] isr        1550 once_bytes:   6400  
+[2017/01/18 15:22:46 186] isr        845  [aud] speech start  
+[2017/01/18 15:22:46 384] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:46 384] isr        1546 6400  2  
+[2017/01/18 15:22:46 586] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:46 586] isr        1546 6400  2  
+[2017/01/18 15:22:46 788] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:46 788] isr        1546 6400  2  
+[2017/01/18 15:22:46 990] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:46 990] isr        1546 6400  2  
+[2017/01/18 15:22:47 191] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:47 191] isr        1546 6400  2  
+[2017/01/18 15:22:47 394] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:47 394] isr        1546 6400  2  
+[2017/01/18 15:22:47 595] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:47 595] isr        1546 6400  2  
+[2017/01/18 15:22:47 796] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:47 796] isr        1546 6400  2  
+[2017/01/18 15:22:47 999] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:47 999] isr        1546 6400  2  
+[2017/01/18 15:22:48 200] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:48 200] isr        1546 6400  2  
+[2017/01/18 15:22:48 302] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:48 302] isr        1546 6400  2  
+[2017/01/18 15:22:48 503] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:48 503] isr        1546 6400  2  
+[2017/01/18 15:22:48 509] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:22:48 704] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:48 704] isr        1546 6400  2  
+[2017/01/18 15:22:48 905] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:48 905] isr        1546 6400  2  
+[2017/01/18 15:22:49 105] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:49 107] isr        1546 6400  2  
+[2017/01/18 15:22:49 308] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:49 308] isr        1546 6400  2  
+[2017/01/18 15:22:49 515] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:49 515] isr        1546 6400  2  
+[2017/01/18 15:22:49 726] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:49 726] isr        1546 6400  2  
+[2017/01/18 15:22:49 940] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:49 940] isr        1546 6400  2  
+[2017/01/18 15:22:50 148] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:50 150] isr        1546 6400  2  
+[2017/01/18 15:22:50 358] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:50 358] isr        1546 6400  2  
+[2017/01/18 15:22:50 559] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:50 559] isr        1546 6400  2  
+[2017/01/18 15:22:50 799] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:50 799] isr        1546 6400  2  
+[2017/01/18 15:22:50 903] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:50 903] isr        1546 6400  2  
+[2017/01/18 15:22:51 108] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:51 108] isr        1546 6400  2  
+[2017/01/18 15:22:51 328] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:51 328] isr        1546 6400  2  
+[2017/01/18 15:22:51 542] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:51 542] isr        1546 6400  2  
+[2017/01/18 15:22:51 546] isr        855  [aud] speech end  
+[2017/01/18 15:22:51 546] isr        872  aud end, MSC VAD  
+[2017/01/18 15:22:51 549] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:22:51 630] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(588ad48) 
+[2017/01/18 15:22:51 630] isr        661  process_result call:  local  udata(588ad48) 0  2  
+[2017/01/18 15:22:51 631] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:22:51 631] isr        774  local session recognized end!  
+[2017/01/18 15:22:51 746] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:51 746] isr        1546 6400  2  
+[2017/01/18 15:22:51 747] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:22:51 747] isr        1546 0  4  
+[2017/01/18 15:22:51 749] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:22:51 749] isr        1297 0  udata(588ad48) 5  
+============================================================
+Time  2017/01/18 15:25:18 183 
+============================================================
+[2017/01/18 15:25:18 184] isr        1641 isr loaded!  
+[2017/01/18 15:25:18 184] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(2f572e0) 
+[2017/01/18 15:25:18 184] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:25:18 184] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:25:18 184] isr        938  vad_set [in]  
+[2017/01/18 15:25:18 184] isr        973  vad_enable :  true  
+[2017/01/18 15:25:18 184] isr        991  vad_bos :  10000  
+[2017/01/18 15:25:18 184] isr        992  vad_eos :  500  
+[2017/01/18 15:25:18 184] isr        897  enable_vad [in]  
+[2017/01/18 15:25:18 186] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:25:18 186] isr        932  enable_vad [out]  
+[2017/01/18 15:25:18 186] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:25:18 186] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:25:18 187] isr        1003 local_session_begin  
+[2017/01/18 15:25:18 421] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:18 421] isr        1546 6400  1  
+[2017/01/18 15:25:18 421] isr        1550 once_bytes:   6400  
+[2017/01/18 15:25:18 424] isr        845  [aud] speech start  
+[2017/01/18 15:25:18 622] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:18 622] isr        1546 6400  2  
+[2017/01/18 15:25:18 823] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:18 823] isr        1546 6400  2  
+[2017/01/18 15:25:19 026] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:19 026] isr        1546 6400  2  
+[2017/01/18 15:25:19 227] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:19 227] isr        1546 6400  2  
+[2017/01/18 15:25:19 234] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:25:19 428] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:19 428] isr        1546 6400  2  
+[2017/01/18 15:25:19 630] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:19 630] isr        1546 6400  2  
+[2017/01/18 15:25:19 831] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:19 831] isr        1546 6400  2  
+[2017/01/18 15:25:19 832] isr        855  [aud] speech end  
+[2017/01/18 15:25:19 832] isr        872  aud end, MSC VAD  
+[2017/01/18 15:25:19 835] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:25:19 920] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(4abff90) 
+[2017/01/18 15:25:19 920] isr        661  process_result call:  local  udata(4abff90) 59  2  
+[2017/01/18 15:25:19 920] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:25:19 921] isr        774  local session recognized end!  
+[2017/01/18 15:25:20 032] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:20 032] isr        1546 6400  2  
+[2017/01/18 15:25:20 033] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:20 033] isr        1546 0  4  
+[2017/01/18 15:25:20 033] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:25:20 033] isr        1297 0  udata(4abff90) 5  
+[2017/01/18 15:25:20 144] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:25:20 144] isr        1346 session_end() [in]  
+[2017/01/18 15:25:20 144] isr        1367 local_session_end() [in]  
+[2017/01/18 15:25:20 145] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:25:20 147] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:25:20 256 
+============================================================
+[2017/01/18 15:25:20 257] isr        1641 isr loaded!  
+[2017/01/18 15:25:20 257] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(4ac6278) 
+[2017/01/18 15:25:20 257] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:25:20 257] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:25:20 259] isr        938  vad_set [in]  
+[2017/01/18 15:25:20 259] isr        973  vad_enable :  true  
+[2017/01/18 15:25:20 259] isr        991  vad_bos :  10000  
+[2017/01/18 15:25:20 259] isr        992  vad_eos :  500  
+[2017/01/18 15:25:20 259] isr        897  enable_vad [in]  
+[2017/01/18 15:25:20 259] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:25:20 259] isr        932  enable_vad [out]  
+[2017/01/18 15:25:20 259] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:25:20 259] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:25:20 259] isr        1003 local_session_begin  
+[2017/01/18 15:25:20 262] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:20 262] isr        1546 6400  1  
+[2017/01/18 15:25:20 262] isr        1550 once_bytes:   6400  
+[2017/01/18 15:25:20 265] isr        845  [aud] speech start  
+[2017/01/18 15:25:20 463] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:20 463] isr        1546 6400  2  
+[2017/01/18 15:25:20 664] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:20 664] isr        1546 6400  2  
+[2017/01/18 15:25:20 865] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:20 865] isr        1546 6400  2  
+[2017/01/18 15:25:21 065] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:21 066] isr        1546 6400  2  
+[2017/01/18 15:25:21 266] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:21 267] isr        1546 6400  2  
+[2017/01/18 15:25:21 469] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:21 470] isr        1546 6400  2  
+[2017/01/18 15:25:21 671] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:21 671] isr        1546 6400  2  
+[2017/01/18 15:25:21 871] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:21 871] isr        1546 6400  2  
+[2017/01/18 15:25:22 073] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:22 073] isr        1546 6400  2  
+[2017/01/18 15:25:22 275] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:22 275] isr        1546 6400  2  
+[2017/01/18 15:25:22 476] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:22 476] isr        1546 6400  2  
+[2017/01/18 15:25:22 678] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:22 678] isr        1546 6400  2  
+[2017/01/18 15:25:22 880] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:25:22 880] isr        1546 6400  2  
+============================================================
+Time  2017/01/18 15:28:28 155 
+============================================================
+[2017/01/18 15:28:28 155] isr        1641 isr loaded!  
+[2017/01/18 15:28:28 155] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(33e7268) 
+[2017/01/18 15:28:28 157] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:28:28 157] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:28:28 157] isr        938  vad_set [in]  
+[2017/01/18 15:28:28 157] isr        973  vad_enable :  true  
+[2017/01/18 15:28:28 157] isr        991  vad_bos :  10000  
+[2017/01/18 15:28:28 157] isr        992  vad_eos :  500  
+[2017/01/18 15:28:28 157] isr        897  enable_vad [in]  
+[2017/01/18 15:28:28 158] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:28:28 158] isr        932  enable_vad [out]  
+[2017/01/18 15:28:28 158] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:28:28 158] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:28:28 158] isr        1003 local_session_begin  
+[2017/01/18 15:28:28 390] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:28 390] isr        1546 6400  1  
+[2017/01/18 15:28:28 390] isr        1550 once_bytes:   6400  
+[2017/01/18 15:28:28 392] isr        845  [aud] speech start  
+[2017/01/18 15:28:28 591] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:28 591] isr        1546 6400  2  
+[2017/01/18 15:28:28 792] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:28 792] isr        1546 6400  2  
+[2017/01/18 15:28:28 993] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:28 993] isr        1546 6400  2  
+[2017/01/18 15:28:29 194] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:29 194] isr        1546 6400  2  
+[2017/01/18 15:28:29 395] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:29 395] isr        1546 6400  2  
+[2017/01/18 15:28:29 596] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:29 596] isr        1546 6400  2  
+[2017/01/18 15:28:29 604] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:28:29 799] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:29 799] isr        1546 6400  2  
+[2017/01/18 15:28:30 000] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:30 000] isr        1546 6400  2  
+[2017/01/18 15:28:30 200] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:30 201] isr        1546 6400  2  
+[2017/01/18 15:28:30 403] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:30 403] isr        1546 6400  2  
+[2017/01/18 15:28:30 605] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:30 605] isr        1546 6400  2  
+[2017/01/18 15:28:30 605] isr        855  [aud] speech end  
+[2017/01/18 15:28:30 605] isr        872  aud end, MSC VAD  
+[2017/01/18 15:28:30 608] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:28:30 654] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(34371f0) 
+[2017/01/18 15:28:30 654] isr        661  process_result call:  local  udata(34371f0) 67  2  
+[2017/01/18 15:28:30 655] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:28:30 655] isr        774  local session recognized end!  
+[2017/01/18 15:28:30 805] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:30 805] isr        1546 6400  2  
+[2017/01/18 15:28:30 806] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:30 806] isr        1546 0  4  
+[2017/01/18 15:28:30 806] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:28:30 806] isr        1297 0  udata(34371f0) 5  
+[2017/01/18 15:28:30 921] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:28:30 921] isr        1346 session_end() [in]  
+[2017/01/18 15:28:30 921] isr        1367 local_session_end() [in]  
+[2017/01/18 15:28:30 923] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:28:30 924] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:28:31 072 
+============================================================
+[2017/01/18 15:28:31 072] isr        1641 isr loaded!  
+[2017/01/18 15:28:31 072] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3430950) 
+[2017/01/18 15:28:31 072] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:28:31 072] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:28:31 075] isr        938  vad_set [in]  
+[2017/01/18 15:28:31 075] isr        973  vad_enable :  true  
+[2017/01/18 15:28:31 075] isr        991  vad_bos :  10000  
+[2017/01/18 15:28:31 075] isr        992  vad_eos :  500  
+[2017/01/18 15:28:31 075] isr        897  enable_vad [in]  
+[2017/01/18 15:28:31 075] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:28:31 075] isr        932  enable_vad [out]  
+[2017/01/18 15:28:31 075] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:28:31 075] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:28:31 075] isr        1003 local_session_begin  
+[2017/01/18 15:28:31 078] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:31 078] isr        1546 6400  1  
+[2017/01/18 15:28:31 078] isr        1550 once_bytes:   6400  
+[2017/01/18 15:28:31 081] isr        845  [aud] speech start  
+[2017/01/18 15:28:31 178] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:31 178] isr        1546 6400  2  
+[2017/01/18 15:28:31 381] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:31 381] isr        1546 6400  2  
+[2017/01/18 15:28:31 582] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:31 582] isr        1546 6400  2  
+[2017/01/18 15:28:31 782] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:31 782] isr        1546 6400  2  
+[2017/01/18 15:28:31 986] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:31 986] isr        1546 6338  2  
+[2017/01/18 15:28:32 086] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:28:32 086] isr        1546 0  4  
+[2017/01/18 15:28:32 086] isr        1579 aud end, USER  
+[2017/01/18 15:28:32 086] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:28:32 088] isr        1297 0  nil  2  
+[2017/01/18 15:28:32 088] isr        855  [aud] speech end  
+[2017/01/18 15:28:32 089] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:28:32 187] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:28:32 187] isr        1297 0  nil  2  
+[2017/01/18 15:28:32 289] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:28:32 289] isr        1297 0  nil  2  
+[2017/01/18 15:28:32 354] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 15:28:32 354] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:28:32 355] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:28:32 355] isr        774  local session recognized end!  
+[2017/01/18 15:28:32 391] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:28:32 391] isr        1297 0  nil  5  
+[2017/01/18 15:28:32 492] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:28:32 492] isr        1346 session_end() [in]  
+[2017/01/18 15:28:32 492] isr        1367 local_session_end() [in]  
+[2017/01/18 15:28:32 494] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:28:32 496] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:40:59 983 
+============================================================
+[2017/01/18 15:40:59 983] isr        1641 isr loaded!  
+[2017/01/18 15:40:59 983] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3897ca0) 
+[2017/01/18 15:40:59 983] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:40:59 983] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:40:59 983] isr        938  vad_set [in]  
+[2017/01/18 15:40:59 983] isr        973  vad_enable :  true  
+[2017/01/18 15:40:59 983] isr        991  vad_bos :  10000  
+[2017/01/18 15:40:59 984] isr        992  vad_eos :  500  
+[2017/01/18 15:40:59 984] isr        897  enable_vad [in]  
+[2017/01/18 15:40:59 984] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:40:59 984] isr        932  enable_vad [out]  
+[2017/01/18 15:40:59 984] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:40:59 984] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:40:59 984] isr        1003 local_session_begin  
+[2017/01/18 15:41:00 216] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:00 216] isr        1546 6400  1  
+[2017/01/18 15:41:00 217] isr        1550 once_bytes:   6400  
+[2017/01/18 15:41:00 220] isr        845  [aud] speech start  
+[2017/01/18 15:41:00 417] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:00 417] isr        1546 6400  2  
+[2017/01/18 15:41:00 618] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:00 618] isr        1546 6400  2  
+[2017/01/18 15:41:00 819] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:00 819] isr        1546 6400  2  
+[2017/01/18 15:41:01 020] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:01 020] isr        1546 6400  2  
+[2017/01/18 15:41:01 223] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:01 223] isr        1546 6400  2  
+[2017/01/18 15:41:01 423] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:01 424] isr        1546 6400  2  
+[2017/01/18 15:41:01 625] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:01 625] isr        1546 6400  2  
+[2017/01/18 15:41:01 826] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:01 826] isr        1546 6400  2  
+[2017/01/18 15:41:02 028] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:02 028] isr        1546 6400  2  
+[2017/01/18 15:41:02 230] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:02 230] isr        1546 6400  2  
+[2017/01/18 15:41:02 431] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:02 431] isr        1546 6400  2  
+[2017/01/18 15:41:02 634] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:02 634] isr        1546 6400  2  
+[2017/01/18 15:41:02 835] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:02 835] isr        1546 6400  2  
+[2017/01/18 15:41:03 038] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:03 038] isr        1546 6400  2  
+[2017/01/18 15:41:03 240] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:03 240] isr        1546 6400  2  
+[2017/01/18 15:41:03 440] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:03 440] isr        1546 6400  2  
+[2017/01/18 15:41:03 450] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:41:03 450] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:41:03 451] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:41:03 451] isr        774  local session recognized end!  
+[2017/01/18 15:41:03 451] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:41:03 642] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:03 642] isr        1546 6400  2  
+[2017/01/18 15:41:03 644] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:03 644] isr        1546 0  4  
+[2017/01/18 15:41:03 644] isr        1579 aud end, USER  
+[2017/01/18 15:41:03 644] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:41:03 644] isr        1297 0  nil  5  
+[2017/01/18 15:41:03 648] isr        855  [aud] speech end  
+[2017/01/18 15:41:03 746] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:41:03 746] isr        1346 session_end() [in]  
+[2017/01/18 15:41:03 746] isr        1367 local_session_end() [in]  
+[2017/01/18 15:41:03 750] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:41:03 752] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:41:03 881 
+============================================================
+[2017/01/18 15:41:03 881] isr        1641 isr loaded!  
+[2017/01/18 15:41:03 881] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(38d7e68) 
+[2017/01/18 15:41:03 881] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:41:03 881] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:41:03 882] isr        938  vad_set [in]  
+[2017/01/18 15:41:03 882] isr        973  vad_enable :  true  
+[2017/01/18 15:41:03 884] isr        991  vad_bos :  10000  
+[2017/01/18 15:41:03 884] isr        992  vad_eos :  500  
+[2017/01/18 15:41:03 884] isr        897  enable_vad [in]  
+[2017/01/18 15:41:03 884] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:41:03 884] isr        932  enable_vad [out]  
+[2017/01/18 15:41:03 884] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:41:03 884] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:41:03 884] isr        1003 local_session_begin  
+[2017/01/18 15:41:03 887] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:03 887] isr        1546 6400  1  
+[2017/01/18 15:41:03 887] isr        1550 once_bytes:   6400  
+[2017/01/18 15:41:03 890] isr        845  [aud] speech start  
+[2017/01/18 15:41:04 088] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:04 088] isr        1546 6400  2  
+[2017/01/18 15:41:04 289] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:04 289] isr        1546 6400  2  
+[2017/01/18 15:41:04 490] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:04 490] isr        1546 6400  2  
+[2017/01/18 15:41:04 691] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:04 691] isr        1546 6400  2  
+[2017/01/18 15:41:04 891] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:04 892] isr        1546 6400  2  
+[2017/01/18 15:41:05 094] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:05 094] isr        1546 6400  2  
+[2017/01/18 15:41:05 098] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:41:05 295] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:05 295] isr        1546 6400  2  
+[2017/01/18 15:41:05 496] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:05 496] isr        1546 6400  2  
+[2017/01/18 15:41:05 697] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:05 697] isr        1546 6400  2  
+[2017/01/18 15:41:05 799] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:05 799] isr        1546 6400  2  
+[2017/01/18 15:41:05 801] isr        855  [aud] speech end  
+[2017/01/18 15:41:05 801] isr        872  aud end, MSC VAD  
+[2017/01/18 15:41:05 803] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:41:05 858] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(54c4990) 
+[2017/01/18 15:41:05 858] isr        661  process_result call:  local  udata(54c4990) 100  2  
+[2017/01/18 15:41:05 858] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:41:05 858] isr        774  local session recognized end!  
+[2017/01/18 15:41:06 000] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:06 000] isr        1546 6400  2  
+[2017/01/18 15:41:06 000] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:41:06 000] isr        1546 0  4  
+[2017/01/18 15:41:06 000] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:41:06 000] isr        1297 0  udata(54c4990) 5  
+============================================================
+Time  2017/01/18 15:43:46 095 
+============================================================
+[2017/01/18 15:43:46 096] isr        1641 isr loaded!  
+[2017/01/18 15:43:46 096] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(39a6f88) 
+[2017/01/18 15:43:46 098] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:43:46 098] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:43:46 098] isr        938  vad_set [in]  
+[2017/01/18 15:43:46 098] isr        973  vad_enable :  true  
+[2017/01/18 15:43:46 098] isr        991  vad_bos :  10000  
+[2017/01/18 15:43:46 098] isr        992  vad_eos :  500  
+[2017/01/18 15:43:46 098] isr        897  enable_vad [in]  
+[2017/01/18 15:43:46 099] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:43:46 099] isr        932  enable_vad [out]  
+[2017/01/18 15:43:46 099] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:43:46 099] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:43:46 099] isr        1003 local_session_begin  
+[2017/01/18 15:43:46 332] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:46 332] isr        1546 6400  1  
+[2017/01/18 15:43:46 332] isr        1550 once_bytes:   6400  
+[2017/01/18 15:43:46 335] isr        845  [aud] speech start  
+[2017/01/18 15:43:46 532] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:46 532] isr        1546 6400  2  
+[2017/01/18 15:43:46 734] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:46 734] isr        1546 6400  2  
+[2017/01/18 15:43:46 937] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:46 937] isr        1546 6400  2  
+[2017/01/18 15:43:47 138] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:47 138] isr        1546 6400  2  
+[2017/01/18 15:43:47 341] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:47 341] isr        1546 6400  2  
+[2017/01/18 15:43:47 542] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:47 542] isr        1546 6400  2  
+[2017/01/18 15:43:47 552] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:43:47 743] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:47 743] isr        1546 6400  2  
+[2017/01/18 15:43:47 944] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:47 944] isr        1546 6400  2  
+[2017/01/18 15:43:47 947] isr        855  [aud] speech end  
+[2017/01/18 15:43:47 947] isr        872  aud end, MSC VAD  
+[2017/01/18 15:43:47 950] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:43:48 062] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(39d9e30) 
+[2017/01/18 15:43:48 062] isr        661  process_result call:  local  udata(39d9e30) 79  2  
+[2017/01/18 15:43:48 062] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:43:48 062] isr        774  local session recognized end!  
+[2017/01/18 15:43:48 147] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:48 147] isr        1546 6400  2  
+[2017/01/18 15:43:48 148] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:48 148] isr        1546 0  4  
+[2017/01/18 15:43:48 148] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:43:48 148] isr        1297 0  udata(39d9e30) 5  
+[2017/01/18 15:43:48 263] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:43:48 263] isr        1346 session_end() [in]  
+[2017/01/18 15:43:48 263] isr        1367 local_session_end() [in]  
+[2017/01/18 15:43:48 265] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:43:48 266] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:43:48 414 
+============================================================
+[2017/01/18 15:43:48 414] isr        1641 isr loaded!  
+[2017/01/18 15:43:48 414] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(562c9d8) 
+[2017/01/18 15:43:48 414] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:43:48 414] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:43:48 417] isr        938  vad_set [in]  
+[2017/01/18 15:43:48 417] isr        973  vad_enable :  true  
+[2017/01/18 15:43:48 417] isr        991  vad_bos :  10000  
+[2017/01/18 15:43:48 417] isr        992  vad_eos :  500  
+[2017/01/18 15:43:48 417] isr        897  enable_vad [in]  
+[2017/01/18 15:43:48 417] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:43:48 417] isr        932  enable_vad [out]  
+[2017/01/18 15:43:48 417] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:43:48 418] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:43:48 418] isr        1003 local_session_begin  
+[2017/01/18 15:43:48 421] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:48 421] isr        1546 6400  1  
+[2017/01/18 15:43:48 421] isr        1550 once_bytes:   6400  
+[2017/01/18 15:43:48 424] isr        845  [aud] speech start  
+[2017/01/18 15:43:48 522] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:48 522] isr        1546 6400  2  
+[2017/01/18 15:43:48 723] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:48 723] isr        1546 6400  2  
+[2017/01/18 15:43:48 924] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:48 924] isr        1546 6400  2  
+[2017/01/18 15:43:49 127] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:49 127] isr        1546 6400  2  
+[2017/01/18 15:43:49 328] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:49 328] isr        1546 6400  2  
+[2017/01/18 15:43:49 529] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:49 529] isr        1546 6400  2  
+[2017/01/18 15:43:49 730] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:49 732] isr        1546 6400  2  
+[2017/01/18 15:43:49 933] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:49 933] isr        1546 6400  2  
+[2017/01/18 15:43:50 134] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:50 134] isr        1546 6400  2  
+[2017/01/18 15:43:50 335] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:50 335] isr        1546 6400  2  
+[2017/01/18 15:43:50 536] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:50 538] isr        1546 6400  2  
+[2017/01/18 15:43:50 737] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:50 739] isr        1546 6400  2  
+[2017/01/18 15:43:50 940] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:50 940] isr        1546 6400  2  
+[2017/01/18 15:43:51 141] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:51 141] isr        1546 6400  2  
+[2017/01/18 15:43:51 344] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:51 344] isr        1546 6400  2  
+[2017/01/18 15:43:51 545] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:51 545] isr        1546 6400  2  
+[2017/01/18 15:43:51 555] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:43:51 555] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:43:51 555] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:43:51 555] isr        774  local session recognized end!  
+[2017/01/18 15:43:51 555] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:43:51 746] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:51 746] isr        1546 6400  2  
+[2017/01/18 15:43:51 746] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:51 746] isr        1546 0  4  
+[2017/01/18 15:43:51 746] isr        1579 aud end, USER  
+[2017/01/18 15:43:51 747] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:43:51 747] isr        1297 0  nil  5  
+[2017/01/18 15:43:51 750] isr        855  [aud] speech end  
+[2017/01/18 15:43:51 848] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:43:51 849] isr        1346 session_end() [in]  
+[2017/01/18 15:43:51 849] isr        1367 local_session_end() [in]  
+[2017/01/18 15:43:51 851] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:43:51 851] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:43:51 967 
+============================================================
+[2017/01/18 15:43:51 967] isr        1641 isr loaded!  
+[2017/01/18 15:43:51 967] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(563c690) 
+[2017/01/18 15:43:51 967] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:43:51 969] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:43:51 969] isr        938  vad_set [in]  
+[2017/01/18 15:43:51 969] isr        973  vad_enable :  true  
+[2017/01/18 15:43:51 969] isr        991  vad_bos :  10000  
+[2017/01/18 15:43:51 969] isr        992  vad_eos :  500  
+[2017/01/18 15:43:51 970] isr        897  enable_vad [in]  
+[2017/01/18 15:43:51 970] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:43:51 970] isr        932  enable_vad [out]  
+[2017/01/18 15:43:51 970] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:43:51 970] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:43:51 970] isr        1003 local_session_begin  
+[2017/01/18 15:43:51 971] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:51 973] isr        1546 6400  1  
+[2017/01/18 15:43:51 973] isr        1550 once_bytes:   6400  
+[2017/01/18 15:43:51 976] isr        845  [aud] speech start  
+[2017/01/18 15:43:52 174] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:52 174] isr        1546 6400  2  
+[2017/01/18 15:43:52 375] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:52 375] isr        1546 6400  2  
+[2017/01/18 15:43:52 476] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:52 476] isr        1546 5058  2  
+[2017/01/18 15:43:52 576] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:43:52 576] isr        1546 0  4  
+[2017/01/18 15:43:52 576] isr        1579 aud end, USER  
+[2017/01/18 15:43:52 578] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:43:52 578] isr        1297 0  nil  2  
+[2017/01/18 15:43:52 578] isr        855  [aud] speech end  
+[2017/01/18 15:43:52 579] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:43:52 678] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:43:52 678] isr        1297 0  nil  2  
+[2017/01/18 15:43:52 760] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 15:43:52 760] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:43:52 762] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:43:52 762] isr        774  local session recognized end!  
+[2017/01/18 15:43:52 779] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:43:52 779] isr        1297 0  nil  5  
+[2017/01/18 15:43:52 881] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:43:52 881] isr        1346 session_end() [in]  
+[2017/01/18 15:43:52 881] isr        1367 local_session_end() [in]  
+[2017/01/18 15:43:52 894] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:43:52 894] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:53:40 596 
+============================================================
+[2017/01/18 15:53:40 596] isr        1641 isr loaded!  
+[2017/01/18 15:53:40 596] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(2e47278) 
+[2017/01/18 15:53:40 598] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:53:40 598] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:53:40 598] isr        938  vad_set [in]  
+[2017/01/18 15:53:40 598] isr        973  vad_enable :  true  
+[2017/01/18 15:53:40 598] isr        991  vad_bos :  10000  
+[2017/01/18 15:53:40 598] isr        992  vad_eos :  500  
+[2017/01/18 15:53:40 598] isr        897  enable_vad [in]  
+[2017/01/18 15:53:40 599] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:53:40 599] isr        932  enable_vad [out]  
+[2017/01/18 15:53:40 599] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:53:40 599] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:53:40 599] isr        1003 local_session_begin  
+[2017/01/18 15:53:40 831] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:40 831] isr        1546 6400  1  
+[2017/01/18 15:53:40 831] isr        1550 once_bytes:   6400  
+[2017/01/18 15:53:40 834] isr        845  [aud] speech start  
+[2017/01/18 15:53:41 032] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:41 032] isr        1546 6400  2  
+[2017/01/18 15:53:41 233] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:41 233] isr        1546 6400  2  
+[2017/01/18 15:53:41 434] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:41 434] isr        1546 6400  2  
+[2017/01/18 15:53:41 635] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:41 635] isr        1546 6400  2  
+[2017/01/18 15:53:41 836] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:41 836] isr        1546 6400  2  
+[2017/01/18 15:53:42 038] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:42 039] isr        1546 6400  2  
+[2017/01/18 15:53:42 240] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:42 240] isr        1546 6400  2  
+[2017/01/18 15:53:42 440] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:42 440] isr        1546 6400  2  
+[2017/01/18 15:53:42 641] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:42 641] isr        1546 6400  2  
+[2017/01/18 15:53:42 842] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:42 842] isr        1546 6400  2  
+[2017/01/18 15:53:43 045] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:43 045] isr        1546 6400  2  
+[2017/01/18 15:53:43 244] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:43 246] isr        1546 6400  2  
+[2017/01/18 15:53:43 447] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:43 447] isr        1546 6400  2  
+[2017/01/18 15:53:43 648] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:43 648] isr        1546 6400  2  
+[2017/01/18 15:53:43 849] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:43 849] isr        1546 6400  2  
+[2017/01/18 15:53:44 051] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:44 051] isr        1546 6400  2  
+[2017/01/18 15:53:44 059] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:53:44 059] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:53:44 061] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:53:44 061] isr        774  local session recognized end!  
+[2017/01/18 15:53:44 061] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:53:44 253] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:44 253] isr        1546 6400  2  
+[2017/01/18 15:53:44 253] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:44 253] isr        1546 0  4  
+[2017/01/18 15:53:44 253] isr        1579 aud end, USER  
+[2017/01/18 15:53:44 253] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:53:44 253] isr        1297 0  nil  5  
+[2017/01/18 15:53:44 257] isr        855  [aud] speech end  
+[2017/01/18 15:53:44 355] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:53:44 355] isr        1346 session_end() [in]  
+[2017/01/18 15:53:44 355] isr        1367 local_session_end() [in]  
+[2017/01/18 15:53:44 357] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:53:44 358] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:53:44 502 
+============================================================
+[2017/01/18 15:53:44 502] isr        1641 isr loaded!  
+[2017/01/18 15:53:44 503] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3058448) 
+[2017/01/18 15:53:44 503] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:53:44 503] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:53:44 505] isr        938  vad_set [in]  
+[2017/01/18 15:53:44 505] isr        973  vad_enable :  true  
+[2017/01/18 15:53:44 505] isr        991  vad_bos :  10000  
+[2017/01/18 15:53:44 505] isr        992  vad_eos :  500  
+[2017/01/18 15:53:44 505] isr        897  enable_vad [in]  
+[2017/01/18 15:53:44 506] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:53:44 506] isr        932  enable_vad [out]  
+[2017/01/18 15:53:44 506] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:53:44 506] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:53:44 506] isr        1003 local_session_begin  
+[2017/01/18 15:53:44 507] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:44 507] isr        1546 6400  1  
+[2017/01/18 15:53:44 507] isr        1550 once_bytes:   6400  
+[2017/01/18 15:53:44 510] isr        845  [aud] speech start  
+[2017/01/18 15:53:44 709] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:44 709] isr        1546 6400  2  
+[2017/01/18 15:53:44 911] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:44 911] isr        1546 6400  2  
+[2017/01/18 15:53:45 111] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:45 111] isr        1546 6400  2  
+[2017/01/18 15:53:45 213] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:45 213] isr        1546 6400  2  
+[2017/01/18 15:53:45 515] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:45 515] isr        1546 6400  2  
+[2017/01/18 15:53:45 617] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:45 617] isr        1546 6400  2  
+[2017/01/18 15:53:45 818] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:45 818] isr        1546 6400  2  
+[2017/01/18 15:53:46 019] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:46 019] isr        1546 6400  2  
+[2017/01/18 15:53:46 220] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:46 220] isr        1546 6400  2  
+[2017/01/18 15:53:46 229] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:53:46 421] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:46 421] isr        1546 6400  2  
+[2017/01/18 15:53:46 622] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:46 622] isr        1546 6400  2  
+[2017/01/18 15:53:46 625] isr        855  [aud] speech end  
+[2017/01/18 15:53:46 625] isr        872  aud end, MSC VAD  
+[2017/01/18 15:53:46 628] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:53:46 717] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(4abc808) 
+[2017/01/18 15:53:46 717] isr        661  process_result call:  local  udata(4abc808) 39  2  
+[2017/01/18 15:53:46 717] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:53:46 717] isr        774  local session recognized end!  
+[2017/01/18 15:53:46 823] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:46 823] isr        1546 6400  2  
+[2017/01/18 15:53:46 825] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:46 825] isr        1546 0  4  
+[2017/01/18 15:53:46 825] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:53:46 825] isr        1297 0  udata(4abc808) 5  
+[2017/01/18 15:53:46 937] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:53:46 937] isr        1346 session_end() [in]  
+[2017/01/18 15:53:46 937] isr        1367 local_session_end() [in]  
+[2017/01/18 15:53:46 960] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:53:46 961] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:53:47 072 
+============================================================
+[2017/01/18 15:53:47 072] isr        1641 isr loaded!  
+[2017/01/18 15:53:47 072] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3035230) 
+[2017/01/18 15:53:47 072] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:53:47 073] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:53:47 073] isr        938  vad_set [in]  
+[2017/01/18 15:53:47 073] isr        973  vad_enable :  true  
+[2017/01/18 15:53:47 073] isr        991  vad_bos :  10000  
+[2017/01/18 15:53:47 073] isr        992  vad_eos :  500  
+[2017/01/18 15:53:47 073] isr        897  enable_vad [in]  
+[2017/01/18 15:53:47 075] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:53:47 075] isr        932  enable_vad [out]  
+[2017/01/18 15:53:47 075] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:53:47 075] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:53:47 075] isr        1003 local_session_begin  
+[2017/01/18 15:53:47 075] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:47 076] isr        1546 6400  1  
+[2017/01/18 15:53:47 076] isr        1550 once_bytes:   6400  
+[2017/01/18 15:53:47 079] isr        845  [aud] speech start  
+[2017/01/18 15:53:47 278] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:47 278] isr        1546 6400  2  
+[2017/01/18 15:53:47 479] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:47 479] isr        1546 6400  2  
+[2017/01/18 15:53:47 680] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:47 680] isr        1546 6400  2  
+[2017/01/18 15:53:47 882] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:47 882] isr        1546 6400  2  
+[2017/01/18 15:53:48 084] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:48 084] isr        1546 6400  2  
+[2017/01/18 15:53:48 285] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:48 286] isr        1546 6400  2  
+[2017/01/18 15:53:48 486] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:48 486] isr        1546 6400  2  
+[2017/01/18 15:53:48 588] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:48 588] isr        1546 1858  2  
+[2017/01/18 15:53:48 687] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:53:48 687] isr        1546 0  4  
+[2017/01/18 15:53:48 687] isr        1579 aud end, USER  
+[2017/01/18 15:53:48 688] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:53:48 688] isr        1297 0  nil  2  
+[2017/01/18 15:53:48 690] isr        855  [aud] speech end  
+[2017/01/18 15:53:48 691] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:53:48 789] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:53:48 789] isr        1297 0  nil  2  
+[2017/01/18 15:53:48 891] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:53:48 891] isr        1297 0  nil  2  
+[2017/01/18 15:53:48 993] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:53:48 993] isr        1297 0  nil  2  
+[2017/01/18 15:53:49 072] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 15:53:49 072] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:53:49 073] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:53:49 073] isr        774  local session recognized end!  
+[2017/01/18 15:53:49 092] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:53:49 092] isr        1297 0  nil  5  
+[2017/01/18 15:53:49 194] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:53:49 194] isr        1346 session_end() [in]  
+[2017/01/18 15:53:49 194] isr        1367 local_session_end() [in]  
+[2017/01/18 15:53:49 197] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:53:49 197] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:55:03 434 
+============================================================
+[2017/01/18 15:55:03 436] isr        1641 isr loaded!  
+[2017/01/18 15:55:03 436] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3227e98) 
+[2017/01/18 15:55:03 436] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:55:03 436] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:55:03 437] isr        938  vad_set [in]  
+[2017/01/18 15:55:03 437] isr        973  vad_enable :  true  
+[2017/01/18 15:55:03 437] isr        991  vad_bos :  10000  
+[2017/01/18 15:55:03 437] isr        992  vad_eos :  500  
+[2017/01/18 15:55:03 437] isr        897  enable_vad [in]  
+[2017/01/18 15:55:03 438] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:55:03 438] isr        932  enable_vad [out]  
+[2017/01/18 15:55:03 438] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:55:03 440] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:55:03 440] isr        1003 local_session_begin  
+[2017/01/18 15:55:03 667] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:03 667] isr        1546 6400  1  
+[2017/01/18 15:55:03 667] isr        1550 once_bytes:   6400  
+[2017/01/18 15:55:03 670] isr        845  [aud] speech start  
+[2017/01/18 15:55:03 868] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:03 868] isr        1546 6400  2  
+[2017/01/18 15:55:04 069] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:04 069] isr        1546 6400  2  
+[2017/01/18 15:55:04 269] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:04 270] isr        1546 6400  2  
+[2017/01/18 15:55:04 471] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:04 471] isr        1546 6400  2  
+[2017/01/18 15:55:04 673] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:04 673] isr        1546 6400  2  
+[2017/01/18 15:55:04 874] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:04 875] isr        1546 6400  2  
+[2017/01/18 15:55:05 075] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:05 075] isr        1546 6400  2  
+[2017/01/18 15:55:05 278] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:05 278] isr        1546 6400  2  
+[2017/01/18 15:55:05 479] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:05 479] isr        1546 6400  2  
+[2017/01/18 15:55:05 680] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:05 680] isr        1546 6400  2  
+[2017/01/18 15:55:05 881] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:05 881] isr        1546 6400  2  
+[2017/01/18 15:55:06 082] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:06 082] isr        1546 6400  2  
+[2017/01/18 15:55:06 282] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:06 283] isr        1546 6400  2  
+[2017/01/18 15:55:06 484] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:06 484] isr        1546 6400  2  
+[2017/01/18 15:55:06 687] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:06 687] isr        1546 6400  2  
+[2017/01/18 15:55:06 888] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:06 888] isr        1546 6400  2  
+[2017/01/18 15:55:06 897] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:55:06 898] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:55:06 898] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:55:06 898] isr        774  local session recognized end!  
+[2017/01/18 15:55:06 898] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:55:07 088] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:07 088] isr        1546 6400  2  
+[2017/01/18 15:55:07 089] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:07 089] isr        1546 0  4  
+[2017/01/18 15:55:07 089] isr        1579 aud end, USER  
+[2017/01/18 15:55:07 089] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:07 091] isr        1297 0  nil  5  
+[2017/01/18 15:55:07 094] isr        855  [aud] speech end  
+[2017/01/18 15:55:07 191] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:55:07 191] isr        1346 session_end() [in]  
+[2017/01/18 15:55:07 191] isr        1367 local_session_end() [in]  
+[2017/01/18 15:55:07 194] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:55:07 194] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:55:07 331 
+============================================================
+[2017/01/18 15:55:07 331] isr        1641 isr loaded!  
+[2017/01/18 15:55:07 331] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(4e0cb50) 
+[2017/01/18 15:55:07 332] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:55:07 332] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:55:07 332] isr        938  vad_set [in]  
+[2017/01/18 15:55:07 332] isr        973  vad_enable :  true  
+[2017/01/18 15:55:07 332] isr        991  vad_bos :  10000  
+[2017/01/18 15:55:07 332] isr        992  vad_eos :  500  
+[2017/01/18 15:55:07 332] isr        897  enable_vad [in]  
+[2017/01/18 15:55:07 334] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:55:07 334] isr        932  enable_vad [out]  
+[2017/01/18 15:55:07 334] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:55:07 334] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:55:07 334] isr        1003 local_session_begin  
+[2017/01/18 15:55:07 335] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:07 335] isr        1546 6400  1  
+[2017/01/18 15:55:07 335] isr        1550 once_bytes:   6400  
+[2017/01/18 15:55:07 338] isr        845  [aud] speech start  
+[2017/01/18 15:55:07 536] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:07 536] isr        1546 6400  2  
+[2017/01/18 15:55:07 737] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:07 739] isr        1546 6400  2  
+[2017/01/18 15:55:07 938] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:07 940] isr        1546 6400  2  
+[2017/01/18 15:55:08 141] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:08 141] isr        1546 6400  2  
+[2017/01/18 15:55:08 342] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:08 342] isr        1546 6400  2  
+[2017/01/18 15:55:08 542] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:08 542] isr        1546 6400  2  
+[2017/01/18 15:55:08 743] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:08 743] isr        1546 6400  2  
+[2017/01/18 15:55:08 944] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:08 944] isr        1546 6400  2  
+[2017/01/18 15:55:09 147] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:09 147] isr        1546 6400  2  
+[2017/01/18 15:55:09 348] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:09 348] isr        1546 6400  2  
+[2017/01/18 15:55:09 548] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:09 549] isr        1546 6400  2  
+[2017/01/18 15:55:09 750] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:09 750] isr        1546 6400  2  
+[2017/01/18 15:55:09 951] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:09 951] isr        1546 6400  2  
+[2017/01/18 15:55:10 154] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:10 154] isr        1546 6400  2  
+[2017/01/18 15:55:10 253] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:10 253] isr        1546 6400  2  
+[2017/01/18 15:55:10 456] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:10 456] isr        1546 6400  2  
+[2017/01/18 15:55:10 464] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:55:10 467] isr        759  local_cbmsg_handler  ,msg=  nil  param1=  nil  
+[2017/01/18 15:55:10 469] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:55:10 470] isr        774  local session recognized end!  
+[2017/01/18 15:55:10 470] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:55:10 657] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:10 657] isr        1546 6400  2  
+[2017/01/18 15:55:10 657] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:10 657] isr        1546 0  4  
+[2017/01/18 15:55:10 657] isr        1579 aud end, USER  
+[2017/01/18 15:55:10 658] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:10 658] isr        1297 0  nil  5  
+[2017/01/18 15:55:10 661] isr        855  [aud] speech end  
+[2017/01/18 15:55:10 759] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:55:10 760] isr        1346 session_end() [in]  
+[2017/01/18 15:55:10 760] isr        1367 local_session_end() [in]  
+[2017/01/18 15:55:10 762] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:55:10 763] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:55:10 878 
+============================================================
+[2017/01/18 15:55:10 878] isr        1641 isr loaded!  
+[2017/01/18 15:55:10 878] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(4e365e0) 
+[2017/01/18 15:55:10 880] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:55:10 880] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:55:10 880] isr        938  vad_set [in]  
+[2017/01/18 15:55:10 880] isr        973  vad_enable :  true  
+[2017/01/18 15:55:10 880] isr        991  vad_bos :  10000  
+[2017/01/18 15:55:10 880] isr        992  vad_eos :  500  
+[2017/01/18 15:55:10 880] isr        897  enable_vad [in]  
+[2017/01/18 15:55:10 881] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:55:10 881] isr        932  enable_vad [out]  
+[2017/01/18 15:55:10 881] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:55:10 881] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:55:10 881] isr        1003 local_session_begin  
+[2017/01/18 15:55:10 882] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:10 882] isr        1546 6400  1  
+[2017/01/18 15:55:10 882] isr        1550 once_bytes:   6400  
+[2017/01/18 15:55:10 885] isr        845  [aud] speech start  
+[2017/01/18 15:55:11 084] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:11 084] isr        1546 6400  2  
+[2017/01/18 15:55:11 285] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:11 285] isr        1546 6400  2  
+[2017/01/18 15:55:11 486] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:11 486] isr        1546 6400  2  
+[2017/01/18 15:55:11 687] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:11 687] isr        1546 6400  2  
+[2017/01/18 15:55:11 888] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:11 888] isr        1546 6400  2  
+[2017/01/18 15:55:12 089] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:12 089] isr        1546 6400  2  
+[2017/01/18 15:55:12 292] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:12 292] isr        1546 6400  2  
+[2017/01/18 15:55:12 299] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:55:12 493] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:12 493] isr        1546 6400  2  
+[2017/01/18 15:55:12 694] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:12 694] isr        1546 6400  2  
+[2017/01/18 15:55:12 894] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:12 894] isr        1546 6400  2  
+[2017/01/18 15:55:13 095] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:13 095] isr        1546 6400  2  
+[2017/01/18 15:55:13 098] isr        855  [aud] speech end  
+[2017/01/18 15:55:13 098] isr        872  aud end, MSC VAD  
+[2017/01/18 15:55:13 101] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:55:13 193] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(4df2f78) 
+[2017/01/18 15:55:13 193] isr        661  process_result call:  local  udata(4df2f78) 41  2  
+[2017/01/18 15:55:13 193] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:55:13 193] isr        774  local session recognized end!  
+[2017/01/18 15:55:13 298] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:13 298] isr        1546 6400  2  
+[2017/01/18 15:55:13 299] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:13 299] isr        1546 0  4  
+[2017/01/18 15:55:13 299] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:13 299] isr        1297 0  udata(4df2f78) 5  
+[2017/01/18 15:55:13 408] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:55:13 408] isr        1346 session_end() [in]  
+[2017/01/18 15:55:13 408] isr        1367 local_session_end() [in]  
+[2017/01/18 15:55:13 436] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:55:13 437] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:55:13 546 
+============================================================
+[2017/01/18 15:55:13 546] isr        1641 isr loaded!  
+[2017/01/18 15:55:13 546] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(4df7180) 
+[2017/01/18 15:55:13 546] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:55:13 546] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:55:13 548] isr        938  vad_set [in]  
+[2017/01/18 15:55:13 548] isr        973  vad_enable :  true  
+[2017/01/18 15:55:13 548] isr        991  vad_bos :  10000  
+[2017/01/18 15:55:13 548] isr        992  vad_eos :  500  
+[2017/01/18 15:55:13 548] isr        897  enable_vad [in]  
+[2017/01/18 15:55:13 549] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:55:13 549] isr        932  enable_vad [out]  
+[2017/01/18 15:55:13 549] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:55:13 549] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:55:13 549] isr        1003 local_session_begin  
+[2017/01/18 15:55:13 549] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:13 549] isr        1546 6400  1  
+[2017/01/18 15:55:13 549] isr        1550 once_bytes:   6400  
+[2017/01/18 15:55:13 552] isr        845  [aud] speech start  
+[2017/01/18 15:55:13 752] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:13 752] isr        1546 6400  2  
+[2017/01/18 15:55:13 953] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:13 953] isr        1546 6400  2  
+[2017/01/18 15:55:14 053] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:14 053] isr        1546 6400  2  
+[2017/01/18 15:55:14 256] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:14 256] isr        1546 6400  2  
+[2017/01/18 15:55:14 457] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:14 457] isr        1546 6400  2  
+[2017/01/18 15:55:14 762] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:14 762] isr        1546 6338  2  
+[2017/01/18 15:55:14 862] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:55:14 862] isr        1546 0  4  
+[2017/01/18 15:55:14 862] isr        1579 aud end, USER  
+[2017/01/18 15:55:14 864] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:14 864] isr        1297 0  nil  2  
+[2017/01/18 15:55:14 865] isr        855  [aud] speech end  
+[2017/01/18 15:55:14 865] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:55:14 964] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:14 964] isr        1297 0  nil  2  
+[2017/01/18 15:55:15 065] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:15 066] isr        1297 0  nil  2  
+[2017/01/18 15:55:15 167] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:15 167] isr        1297 0  nil  2  
+[2017/01/18 15:55:15 204] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 15:55:15 204] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:55:15 204] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:55:15 204] isr        774  local session recognized end!  
+[2017/01/18 15:55:15 267] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:55:15 267] isr        1297 0  nil  5  
+[2017/01/18 15:55:15 368] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:55:15 368] isr        1346 session_end() [in]  
+[2017/01/18 15:55:15 369] isr        1367 local_session_end() [in]  
+[2017/01/18 15:55:15 371] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:55:15 372] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:56:23 072 
+============================================================
+[2017/01/18 15:56:23 072] isr        1641 isr loaded!  
+[2017/01/18 15:56:23 072] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(38b7a28) 
+[2017/01/18 15:56:23 072] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:56:23 072] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:56:23 073] isr        938  vad_set [in]  
+[2017/01/18 15:56:23 073] isr        973  vad_enable :  true  
+[2017/01/18 15:56:23 073] isr        991  vad_bos :  10000  
+[2017/01/18 15:56:23 073] isr        992  vad_eos :  500  
+[2017/01/18 15:56:23 073] isr        897  enable_vad [in]  
+[2017/01/18 15:56:23 075] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:56:23 075] isr        932  enable_vad [out]  
+[2017/01/18 15:56:23 075] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:56:23 075] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:56:23 075] isr        1003 local_session_begin  
+[2017/01/18 15:56:23 305] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:23 305] isr        1546 6400  1  
+[2017/01/18 15:56:23 305] isr        1550 once_bytes:   6400  
+[2017/01/18 15:56:23 308] isr        845  [aud] speech start  
+[2017/01/18 15:56:23 506] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:23 506] isr        1546 6400  2  
+[2017/01/18 15:56:23 709] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:23 709] isr        1546 6400  2  
+[2017/01/18 15:56:23 911] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:23 911] isr        1546 6400  2  
+[2017/01/18 15:56:24 112] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:24 112] isr        1546 6400  2  
+[2017/01/18 15:56:24 313] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:24 313] isr        1546 6400  2  
+[2017/01/18 15:56:24 516] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:24 516] isr        1546 6400  2  
+[2017/01/18 15:56:24 717] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:24 717] isr        1546 6400  2  
+[2017/01/18 15:56:24 920] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:24 920] isr        1546 6400  2  
+[2017/01/18 15:56:25 121] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:25 121] isr        1546 6400  2  
+[2017/01/18 15:56:25 323] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:25 323] isr        1546 6400  2  
+[2017/01/18 15:56:25 525] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:25 525] isr        1546 6400  2  
+[2017/01/18 15:56:25 726] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:25 726] isr        1546 6400  2  
+[2017/01/18 15:56:25 733] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:56:25 927] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:25 927] isr        1546 6400  2  
+[2017/01/18 15:56:26 128] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:26 128] isr        1546 6400  2  
+[2017/01/18 15:56:26 131] isr        855  [aud] speech end  
+[2017/01/18 15:56:26 131] isr        872  aud end, MSC VAD  
+[2017/01/18 15:56:26 134] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:56:26 201] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(3c5a710) 
+[2017/01/18 15:56:26 203] isr        661  process_result call:  local  udata(3c5a710) 53  2  
+[2017/01/18 15:56:26 203] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:56:26 203] isr        774  local session recognized end!  
+[2017/01/18 15:56:26 331] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:26 331] isr        1546 6400  2  
+[2017/01/18 15:56:26 332] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:26 332] isr        1546 0  4  
+[2017/01/18 15:56:26 332] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:56:26 332] isr        1297 0  udata(3c5a710) 5  
+[2017/01/18 15:56:26 444] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:56:26 444] isr        1346 session_end() [in]  
+[2017/01/18 15:56:26 444] isr        1367 local_session_end() [in]  
+[2017/01/18 15:56:26 444] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:56:26 446] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:56:26 556 
+============================================================
+[2017/01/18 15:56:26 556] isr        1641 isr loaded!  
+[2017/01/18 15:56:26 556] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(3907e58) 
+[2017/01/18 15:56:26 558] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:56:26 558] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:56:26 558] isr        938  vad_set [in]  
+[2017/01/18 15:56:26 558] isr        973  vad_enable :  true  
+[2017/01/18 15:56:26 558] isr        991  vad_bos :  10000  
+[2017/01/18 15:56:26 558] isr        992  vad_eos :  500  
+[2017/01/18 15:56:26 558] isr        897  enable_vad [in]  
+[2017/01/18 15:56:26 559] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:56:26 559] isr        932  enable_vad [out]  
+[2017/01/18 15:56:26 559] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:56:26 559] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:56:26 559] isr        1003 local_session_begin  
+[2017/01/18 15:56:26 561] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:26 561] isr        1546 6400  1  
+[2017/01/18 15:56:26 561] isr        1550 once_bytes:   6400  
+[2017/01/18 15:56:26 563] isr        845  [aud] speech start  
+[2017/01/18 15:56:26 762] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:26 762] isr        1546 6400  2  
+[2017/01/18 15:56:26 963] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:26 963] isr        1546 6400  2  
+[2017/01/18 15:56:27 164] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:27 164] isr        1546 6400  2  
+[2017/01/18 15:56:27 365] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:27 365] isr        1546 6400  2  
+[2017/01/18 15:56:27 566] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:27 566] isr        1546 6400  2  
+[2017/01/18 15:56:27 767] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:27 767] isr        1546 6400  2  
+[2017/01/18 15:56:27 969] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:27 969] isr        1546 6400  2  
+[2017/01/18 15:56:28 170] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:28 170] isr        1546 6400  2  
+[2017/01/18 15:56:28 371] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:28 371] isr        1546 6400  2  
+[2017/01/18 15:56:28 471] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:28 471] isr        1546 6400  2  
+[2017/01/18 15:56:28 674] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:28 674] isr        1546 6400  2  
+[2017/01/18 15:56:28 875] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:28 875] isr        1546 6400  2  
+[2017/01/18 15:56:29 075] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:29 075] isr        1546 6400  2  
+[2017/01/18 15:56:29 082] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 15:56:29 276] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:29 276] isr        1546 6400  2  
+[2017/01/18 15:56:29 477] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:29 479] isr        1546 6400  2  
+[2017/01/18 15:56:29 480] isr        855  [aud] speech end  
+[2017/01/18 15:56:29 480] isr        872  aud end, MSC VAD  
+[2017/01/18 15:56:29 483] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:56:29 552] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(38736a0) 
+[2017/01/18 15:56:29 552] isr        661  process_result call:  local  udata(38736a0) 47  2  
+[2017/01/18 15:56:29 552] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:56:29 552] isr        774  local session recognized end!  
+[2017/01/18 15:56:29 680] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:29 680] isr        1546 6400  2  
+[2017/01/18 15:56:29 680] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:29 680] isr        1546 0  4  
+[2017/01/18 15:56:29 680] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:56:29 680] isr        1297 0  udata(38736a0) 5  
+[2017/01/18 15:56:29 792] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:56:29 792] isr        1346 session_end() [in]  
+[2017/01/18 15:56:29 792] isr        1367 local_session_end() [in]  
+[2017/01/18 15:56:29 795] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:56:29 795] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 15:56:29 905 
+============================================================
+[2017/01/18 15:56:29 905] isr        1641 isr loaded!  
+[2017/01/18 15:56:29 905] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(390e9d8) 
+[2017/01/18 15:56:29 905] isr        1525 ASR_MSG_SSB  
+[2017/01/18 15:56:29 905] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 15:56:29 907] isr        938  vad_set [in]  
+[2017/01/18 15:56:29 907] isr        973  vad_enable :  true  
+[2017/01/18 15:56:29 907] isr        991  vad_bos :  10000  
+[2017/01/18 15:56:29 907] isr        992  vad_eos :  500  
+[2017/01/18 15:56:29 907] isr        897  enable_vad [in]  
+[2017/01/18 15:56:29 907] isr        929  vad enabled!  500  10000  
+[2017/01/18 15:56:29 907] isr        932  enable_vad [out]  
+[2017/01/18 15:56:29 907] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 15:56:29 907] isr        1174 cur_engine_type =   local  
+[2017/01/18 15:56:29 907] isr        1003 local_session_begin  
+[2017/01/18 15:56:29 908] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:29 908] isr        1546 6400  1  
+[2017/01/18 15:56:29 910] isr        1550 once_bytes:   6400  
+[2017/01/18 15:56:29 911] isr        845  [aud] speech start  
+[2017/01/18 15:56:30 109] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:30 111] isr        1546 6400  2  
+[2017/01/18 15:56:30 312] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:30 312] isr        1546 6400  2  
+[2017/01/18 15:56:30 513] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:30 513] isr        1546 6400  2  
+[2017/01/18 15:56:30 713] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:30 713] isr        1546 6400  2  
+[2017/01/18 15:56:30 914] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:30 914] isr        1546 6400  2  
+[2017/01/18 15:56:31 117] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:31 118] isr        1546 4738  2  
+[2017/01/18 15:56:31 217] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 15:56:31 217] isr        1546 0  4  
+[2017/01/18 15:56:31 217] isr        1579 aud end, USER  
+[2017/01/18 15:56:31 217] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:56:31 217] isr        1297 0  nil  2  
+[2017/01/18 15:56:31 220] isr        855  [aud] speech end  
+[2017/01/18 15:56:31 220] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 15:56:31 319] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:56:31 319] isr        1297 0  nil  2  
+[2017/01/18 15:56:31 420] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:56:31 420] isr        1297 0  nil  2  
+[2017/01/18 15:56:31 522] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:56:31 522] isr        1297 0  nil  2  
+[2017/01/18 15:56:31 536] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 15:56:31 538] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 15:56:31 538] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 15:56:31 538] isr        774  local session recognized end!  
+[2017/01/18 15:56:31 622] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 15:56:31 622] isr        1297 0  nil  5  
+[2017/01/18 15:56:31 723] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 15:56:31 723] isr        1346 session_end() [in]  
+[2017/01/18 15:56:31 723] isr        1367 local_session_end() [in]  
+[2017/01/18 15:56:31 726] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 15:56:31 726] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 16:03:29 450 
+============================================================
+[2017/01/18 16:03:29 450] isr        1641 isr loaded!  
+[2017/01/18 16:03:29 450] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(2dec758) 
+[2017/01/18 16:03:29 451] isr        1525 ASR_MSG_SSB  
+[2017/01/18 16:03:29 451] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 16:03:29 451] isr        938  vad_set [in]  
+[2017/01/18 16:03:29 453] isr        973  vad_enable :  true  
+[2017/01/18 16:03:29 453] isr        991  vad_bos :  10000  
+[2017/01/18 16:03:29 453] isr        992  vad_eos :  500  
+[2017/01/18 16:03:29 453] isr        897  enable_vad [in]  
+[2017/01/18 16:03:29 453] isr        929  vad enabled!  500  10000  
+[2017/01/18 16:03:29 453] isr        932  enable_vad [out]  
+[2017/01/18 16:03:29 453] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 16:03:29 453] isr        1174 cur_engine_type =   local  
+[2017/01/18 16:03:29 453] isr        1003 local_session_begin  
+[2017/01/18 16:03:29 674] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:29 674] isr        1546 6400  1  
+[2017/01/18 16:03:29 674] isr        1550 once_bytes:   6400  
+[2017/01/18 16:03:29 681] isr        845  [aud] speech start  
+[2017/01/18 16:03:29 888] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:29 888] isr        1546 6400  2  
+[2017/01/18 16:03:30 089] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:30 089] isr        1546 6400  2  
+[2017/01/18 16:03:30 290] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:30 290] isr        1546 6400  2  
+[2017/01/18 16:03:30 493] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:30 493] isr        1546 6400  2  
+[2017/01/18 16:03:30 694] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:30 694] isr        1546 6400  2  
+[2017/01/18 16:03:30 897] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:30 897] isr        1546 6400  2  
+[2017/01/18 16:03:31 098] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:31 098] isr        1546 6400  2  
+[2017/01/18 16:03:31 302] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:31 302] isr        1546 6400  2  
+[2017/01/18 16:03:31 503] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:31 503] isr        1546 6400  2  
+[2017/01/18 16:03:31 704] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:31 704] isr        1546 6400  2  
+[2017/01/18 16:03:31 905] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:31 905] isr        1546 6400  2  
+[2017/01/18 16:03:32 108] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:32 108] isr        1546 6400  2  
+[2017/01/18 16:03:32 309] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:32 309] isr        1546 6400  2  
+[2017/01/18 16:03:32 510] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:32 510] isr        1546 6400  2  
+[2017/01/18 16:03:32 711] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:32 711] isr        1546 6400  2  
+[2017/01/18 16:03:32 720] isr        759  local_cbmsg_handler  ,msg=  404  param1=  nil  
+[2017/01/18 16:03:32 914] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:32 914] isr        1546 6400  2  
+[2017/01/18 16:03:33 115] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:33 115] isr        1546 6400  2  
+[2017/01/18 16:03:33 316] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:33 316] isr        1546 6400  2  
+[2017/01/18 16:03:33 318] isr        855  [aud] speech end  
+[2017/01/18 16:03:33 318] isr        872  aud end, MSC VAD  
+[2017/01/18 16:03:33 321] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 16:03:33 404] isr        759  local_cbmsg_handler  ,msg=  407  param1=  udata(2e62eb8) 
+[2017/01/18 16:03:33 404] isr        661  process_result call:  local  udata(2e62eb8) 43  2  
+[2017/01/18 16:03:33 404] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 16:03:33 404] isr        774  local session recognized end!  
+[2017/01/18 16:03:33 519] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:33 519] isr        1546 6400  2  
+[2017/01/18 16:03:33 519] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:33 519] isr        1546 0  4  
+[2017/01/18 16:03:33 520] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 16:03:33 520] isr        1297 0  udata(2e62eb8) 5  
+[2017/01/18 16:03:33 632] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 16:03:33 632] isr        1346 session_end() [in]  
+[2017/01/18 16:03:33 632] isr        1367 local_session_end() [in]  
+[2017/01/18 16:03:33 634] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 16:03:33 634] isr        1649 isr unload!  
+============================================================
+Time  2017/01/18 16:03:33 779 
+============================================================
+[2017/01/18 16:03:33 779] isr        1641 isr loaded!  
+[2017/01/18 16:03:33 779] isr        1624 SYS_MSG_REGCB param0 =   msp_status_cb  param1 =   func(2e5fb78) 
+[2017/01/18 16:03:33 779] isr        1525 ASR_MSG_SSB  
+[2017/01/18 16:03:33 779] isr        1070 session_begin() [in], params:   engine_type = local, accent = mandarin,  vad_eos = 500, 				asr_res_path = fo|res/asr/common.jet, sample_rate = 16000, asr_denoise = 1,						grm_build_path = res/asr/GrmBuilld, local_grammar = mainUI, 								result_type = json, result_encoding = GB2312, ═¤¤¤¤ллллллллю■ю■  nil  
+[2017/01/18 16:03:33 782] isr        938  vad_set [in]  
+[2017/01/18 16:03:33 782] isr        973  vad_enable :  true  
+[2017/01/18 16:03:33 782] isr        991  vad_bos :  10000  
+[2017/01/18 16:03:33 782] isr        992  vad_eos :  500  
+[2017/01/18 16:03:33 782] isr        897  enable_vad [in]  
+[2017/01/18 16:03:33 782] isr        929  vad enabled!  500  10000  
+[2017/01/18 16:03:33 782] isr        932  enable_vad [out]  
+[2017/01/18 16:03:33 782] isr        998  vad_set [out] | ret =  0  
+[2017/01/18 16:03:33 782] isr        1174 cur_engine_type =   local  
+[2017/01/18 16:03:33 782] isr        1003 local_session_begin  
+[2017/01/18 16:03:33 785] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:33 786] isr        1546 6400  1  
+[2017/01/18 16:03:33 786] isr        1550 once_bytes:   6400  
+[2017/01/18 16:03:33 788] isr        845  [aud] speech start  
+[2017/01/18 16:03:33 888] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:33 888] isr        1546 6400  2  
+[2017/01/18 16:03:34 088] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:34 089] isr        1546 6400  2  
+[2017/01/18 16:03:34 290] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:34 290] isr        1546 6400  2  
+[2017/01/18 16:03:34 493] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:34 493] isr        1546 6400  2  
+[2017/01/18 16:03:34 693] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:34 694] isr        1546 6400  2  
+[2017/01/18 16:03:34 895] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:34 895] isr        1546 6400  2  
+[2017/01/18 16:03:34 996] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:34 996] isr        1546 4098  2  
+[2017/01/18 16:03:35 098] isr        1535 ASR_MSG_AUW,   local  
+[2017/01/18 16:03:35 098] isr        1546 0  4  
+[2017/01/18 16:03:35 098] isr        1579 aud end, USER  
+[2017/01/18 16:03:35 098] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 16:03:35 098] isr        1297 0  nil  2  
+[2017/01/18 16:03:35 101] isr        855  [aud] speech end  
+[2017/01/18 16:03:35 101] isr        759  local_cbmsg_handler  ,msg=  406  param1=  nil  
+[2017/01/18 16:03:35 200] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 16:03:35 200] isr        1297 0  nil  2  
+[2017/01/18 16:03:35 301] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 16:03:35 302] isr        1297 0  nil  2  
+[2017/01/18 16:03:35 401] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 16:03:35 401] isr        1297 0  nil  2  
+[2017/01/18 16:03:35 499] isr        759  local_cbmsg_handler  ,msg=  407  param1=  nil  
+[2017/01/18 16:03:35 499] isr        661  process_result call:  local  nil  0  2  
+[2017/01/18 16:03:35 499] isr        759  local_cbmsg_handler  ,msg=  408  param1=  nil  
+[2017/01/18 16:03:35 499] isr        774  local session recognized end!  
+[2017/01/18 16:03:35 503] isr        1618 ASR_MSG_GRSLT,   local  
+[2017/01/18 16:03:35 503] isr        1297 0  nil  5  
+[2017/01/18 16:03:35 605] isr        1621 ASR_MSG_SSE,   local  
+[2017/01/18 16:03:35 605] isr        1346 session_end() [in]  
+[2017/01/18 16:03:35 605] isr        1367 local_session_end() [in]  
+[2017/01/18 16:03:35 605] isr        1404 ASR_LOCAL_MSG_SSE net_type  nil  
+[2017/01/18 16:03:35 607] isr        1649 isr unload!  

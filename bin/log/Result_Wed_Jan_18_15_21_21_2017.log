@@ -1,0 +1,15 @@
+Wed Jan 18 15:21:29 2017 : <?xml version='1.0' encoding='gb2312' standalone='yes' ?><nlp>
+  <version>1.1</version>
+  <rawtext>训练</rawtext>
+  <confidence>67</confidence>
+  <engine>local</engine>
+  <result>
+    <focus>训练</focus>
+    <confidence>82</confidence>
+    <object>
+      <训练 id="3">训练</训练>
+    </object>
+  </result>
+</nlp>
+
+
