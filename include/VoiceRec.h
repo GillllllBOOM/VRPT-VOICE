@@ -3,14 +3,21 @@
 @brief 基于录音接口和讯飞MSC接口封装MIC录音识别类
 
 @author		Willis ZHU
-@date		2017/1/16
+@date		2017/3/10
 */
 
 #include <list>
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
+#include <thread>
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <conio.h>
+#include <errno.h>
+#include <time.h>
+#include <exception>
 
 #define DEFAULT_INPUT_DEVID     (-1)
 
@@ -22,7 +29,8 @@ using namespace std;
 
 #define	BUFFER_SIZE	4096
 
-#define __FILE_SAVE_VERIFY__
+
+//#define __FILE_SAVE_VERIFY__
 //#define __DEBUG__
 
 #define END_REASON_VAD_DETECT	0	/* detected speech done  */
@@ -33,7 +41,7 @@ using namespace std;
 
 struct speech_rec {
 	volatile int aud_src;  /* from mic or manual  stream write */
-	const char * session_id;
+	const char * session_id = NULL;
 	int ep_stat;
 	int rec_stat;
 	int audio_status;
@@ -53,20 +61,25 @@ class VoiceRec{
 private:
 	speech_rec* sr;
 	int signal;
-
 	char* g_result;
 	unsigned int g_buffersize;
 
 #ifdef __FILE_SAVE_VERIFY__
 	char* AUDIO_FILE;
 	FILE* audio_stream;
-	string LOG_FILE;
+	std::string LOG_FILE;
 #endif
 
 public:
+	std::list<speech_audio_data>speech_audio_buffer;
+
 	VoiceRec();
-	~VoiceRec(){ if(sr) delete sr; if(AUDIO_FILE) free(AUDIO_FILE); };
-	list<speech_audio_data>speech_audio_buffer;
+	~VoiceRec(){ if(sr) delete sr; 
+#ifdef __FILE_SAVE_VERIFY__
+		if(AUDIO_FILE) free(AUDIO_FILE); 
+#endif
+	};
+	
 	/* must init before start . devid = -1, then the default device will be used.
 	devid will be ignored if the aud_src is not SR_MIC */
 	int sr_init(char * session_begin_params, int aud_src, int devid);
@@ -93,6 +106,7 @@ public:
 	void end_sr_on_normal();
 
 	void on_result(const char *result, char is_last);
+	void show_result(char *result, char is_over);
 	void on_speech_begin();
 	void on_speech_end(int reason);
 };

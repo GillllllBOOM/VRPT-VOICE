@@ -1,6 +1,0 @@
-#BNF+IAT 1.0 GB2312;
-!grammar mainUI;
-
-!start <mainUIstart>;
-
-<mainUIstart>:–£«π!id(001)| Ω–«π!id(001) | ±Í∂®!id(002) | —µ¡∑!id(003) | øº∫À!id(004) | ”È¿÷!id(005) ;

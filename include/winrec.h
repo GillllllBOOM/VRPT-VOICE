@@ -14,6 +14,11 @@
  * @author		taozhang9
  * @date		2016/05/27
  */
+#include <stdio.h>
+#include <stdlib.h>
+#include <Windows.h>
+#include <mmsystem.h>   
+#include <errno.h>
 
 #ifndef __IFLY_WINREC_H__
 #define __IFLY_WINREC_H__

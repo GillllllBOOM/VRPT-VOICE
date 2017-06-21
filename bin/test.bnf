@@ -1,13 +1,16 @@
 #BNF+IAT 1.0 GB2312;
-!grammar test;
+!grammar commander;
 
-!slot <greeting>;
-!slot <warning>;
-!slot <handsup>;
+!start <commanderstart> ;
 
-!start <teststart>;
+<commanderstart> : <police0> | <weapon0> | <headdown0> | <handwall0> | <back> ;
 
-<teststart>:[<greeting>][<warning>][<handsup>];
-<greeting>:早上好!id(001) | 您好!id(001) | 你好!id(001);
-<warning>:不许!id(002) | 别!id(002);
-<handsup>:举起!id(003) | 举手!id(003);
+<police0> : 警察!id(301) | 您好我们是警察!id(301) ; 
+
+<weapon0> : 放下武器!id(302) | 放下刀!id(302) | 放下枪!id(302) | 把武器放下!id(302) | 把刀放下!id(302) | 把枪放下!id(302) ;
+
+<headdown0> : 抱头蹲下!id(303) | 你好!id(303) ;
+
+<handwall0> : 伸手靠墙!id(304) ;
+
+<back> : 返回!id(201) ;

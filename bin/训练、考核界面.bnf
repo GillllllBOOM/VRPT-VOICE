@@ -1,7 +1,0 @@
-#BNF+IAT 1.0 GB2312;
-!grammar train;
-
-!start <trainstart>;
-
-<trainstart>:返回!id(001) | 基础射击!id(002) | 日常巡检!id(003) | 实战射击!id(004) | 紧急处置!id(005) | 视频教学!id(006);
-
